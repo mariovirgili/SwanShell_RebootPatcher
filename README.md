@@ -24,6 +24,9 @@ it looks at a ROM, finds how the game reads the keypad, writes the patch and
     python swanshell_patcher.py          # window
     python swanshell_patcher.py ROM_OR_FOLDER... [-o PATCHES]
 
+A folder is searched for `.ws`, `.wsc`, `.pc2`, and `.bin` files that end
+with a WonderSwan header (No-Intro/TOSEC sets often use `.bin`).
+
 Copy the `.Y1P` files to **`/NILESWAN/PATCHES/`** on the SD card and turn on
 *Settings > System > Advanced > START+Y1 back to menu* in SwanShellDX.
 

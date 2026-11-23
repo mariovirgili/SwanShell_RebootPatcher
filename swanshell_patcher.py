@@ -36,7 +36,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from swanpatch import __version__                            # noqa: E402
 from swanpatch.patcher import Options, patch_rom, save        # noqa: E402
-from swanpatch.rom import ROM_EXTS                            # noqa: E402
+from swanpatch.rom import ROM_EXTS, MAYBE_EXTS, file_has_header  # noqa: E402
 
 
 def bundled_db():
@@ -51,8 +51,10 @@ def list_roms(paths):
             for root, dirs, files in os.walk(p):
                 dirs.sort()
                 for f in sorted(files):
-                    if f.lower().endswith(ROM_EXTS):
-                        out.append(os.path.join(root, f))
+                    full = os.path.join(root, f)
+                    if f.lower().endswith(ROM_EXTS) or (
+                            f.lower().endswith(MAYBE_EXTS) and file_has_header(full)):
+                        out.append(full)
         elif os.path.isfile(p):
             out.append(p)
         else:
@@ -159,7 +161,7 @@ def gui():
 
     def add_files():
         roms.extend(filedialog.askopenfilenames(
-            filetypes=[('WonderSwan ROM', '*.ws *.wsc *.pc2'), ('All files', '*.*')]))
+            filetypes=[('WonderSwan ROM', '*.ws *.wsc *.pc2 *.bin'), ('All files', '*.*')]))
         lbl.config(text='%d ROM(s)' % len(roms))
 
     def add_dir():

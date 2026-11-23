@@ -30,6 +30,7 @@ RESET = HOOK[0x35:]
 assert RESET[0] == 0xFA and len(RESET) == 32
 
 ROM_EXTS = ('.ws', '.wsc', '.pc2')
+MAYBE_EXTS = ('.bin',)             # used only when the file has a WonderSwan header
 
 # Keypad (port B5h): write the group in bits 4-6 (10h = Y1-Y4, 20h = X1-X4,
 # 40h = START/A/B), read the four keys in bits 0-3 (bits 4-6 read back the
@@ -66,6 +67,19 @@ def file_key(data):
 
 def rom_crc(data):
     return '%08X' % (zlib.crc32(data) & 0xFFFFFFFF)
+
+
+def file_has_header(path):
+    """True if the file ends with a WonderSwan header (reads 16 bytes)."""
+    try:
+        size = os.path.getsize(path)
+        if size < 0x10000 or size & 0xFFFF:
+            return False
+        with open(path, 'rb') as f:
+            f.seek(-16, 2)
+            return has_header(f.read(16))
+    except OSError:
+        return False
 
 
 def has_header(data):

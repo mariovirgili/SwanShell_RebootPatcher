@@ -293,3 +293,96 @@ CCCAF8A1;2097152;0109005B120020;database;3;LastStand (J) [M].ws
 E55D9672;2097152;0E020059F70020;database;3;Kakutou Ryouri Densetsu Bistro Recipe - Wonder Battle Hen (EN v0.9.4, ALL CAPS).ws
 D465D6EF;2097152;0E020059F70020;database;3;Kakutou Ryouri Densetsu Bistro Recipe - Wonder Battle Hen (EN v0.9.4, Fighting Foodons names).ws
 CFCBEC95;2097152;0E020059F70020;database;3;Kakutou Ryouri Densetsu Bistro Recipe - Wonder Battle Hen (EN v0.9.4, Fighting Foodons names, ALL CAPS).ws
+1887389C;2097152;00008000000008;database;4;Dicing Knight. (2004-05-31)(Qute).bin
+56F4E554;2097152;00008000000008;database;4;Dicing Knight. (2004-05-31)(Qute)[tr en Aeon Genesis][v1.00-20070120].bin
+7B2A02E3;4194304;010100C3A50040;trampoline;4;Digimon - Anode Tamer & Cathode Tamer - Veedramon Version (2001)(Bandai)(KR).bin
+4D28637E;4194304;010300CBD70040;database;4;Digimon Adventure 02 - D1 Tamers (2000-12-09)(Bandai)[SWJ-BANC03].bin
+A784D126;4194304;010300CBD70040;database;4;Digimon Adventure 02 - D1 Tamers (2000-12-09)(Bandai)[tr en DigitalZero Domain][v0.1-20060425].bin
+9FF6C122;4194304;010300CBD70040;database;4;Digimon Adventure 02 - D1 Tamers (2000-12-09)(Bandai)[tr en PmHacks][v0.05-20031004].bin
+62F4E4B4;4194304;010301B5290040;trampoline;4;Digimon Adventure 02 - D1 Tamers Rev 1 (2000)(Bandai)[SWJ-BANC03].bin
+C927BFCB;4194304;011A0004F10040;classic;3;Digimon Tamers - Battle Spirit (2001-10-06)(Bandai)[SWJ-BANC1A, SWJ-BANC24].bin
+ED05BCD0;8388608;013000443E0080;database;3;Digimon Tamers - Battle Spirit Ver.1.5 (2002-04-27)(Bandai)[tr en][SWJ-BANC30].bin
+F1F4D41F;4194304;011D01279D0040;trampoline;4;Digimon Tamers - Brave Tamer (2001-12-29)(Bandai)[SWJ-BANC1D].wsc
+7B4EB80D;4194304;011D01279D0040;trampoline;4;Digimon Tamers - Brave Tamer (2001-12-29)(Bandai)[b][SWJ-BANC1D].bin
+FA92418D;4194304;011400698F0040;port;3;Digimon Tamers - Digimon Medley (2001-07-12)(Bandai)[SWJ-BANC14].bin
+224F688A;4194304;0114004BC90040;port;3;Digimon Tamers - Digimon Medley (2001-07-12)(Bandai)[f EEPROM][SWJ-BANC14].bin
+84A46949;4194304;011400EE740040;database;3;Digimon Tamers - Digimon Medley Rev 1 (2001)(Bandai)[SWJ-BANC14].bin
+BD83B82D;4194304;012E0105490040;classic;3;Digital Monster - D-Project Rev 1 (2002)(Bandai)[SWJ-BANC2E].bin
+0E40829C;4194304;012E0250E70040;classic;3;Digital Monster - D-Project Rev 2 (2002)(Bandai)[SWJ-BANC2E].bin
+603CB5E6;4194304;01220000120040;classic;3;Digital Monster Card Game - Ver. WonderSwan Color (2002-03-16)(Bandai)[SWJ-BANC22].bin
+0B03CCDE;4194304;01220074810040;classic;3;Digital Monster Card Game - Ver. WonderSwan Color (2002-03-16)(Bandai)[f SRAM Sekret][SWJ-BANC22].bin
+5D06EC0F;4194304;01220000120040;classic;3;Digital Monster Card Game - Ver. WonderSwan Color (2002-03-16)(Bandai)[tr en][SWJ-BANC22].bin
+1E760C41;4194304;01220284660040;classic;3;Digital Monster Card Game - Ver. WonderSwan Color Rev 2 (2002)(Bandai)[SWJ-BANC22].bin
+DF94A149;4194304;28010070210040;classic;2;Final Fantasy (2000-12-09)(Squaresoft)[tr en Kalas][v0.91-20020411].bin
+6045DF59;4194304;280200F3570040;database;3;Final Fantasy II (2001-05-03)(Squaresoft)[te en RPGOne][v0.95-20020520].bin
+15EC0525;4194304;280200F3570040;database;3;Final Fantasy II (2001-05-03)(Squaresoft)[te en RPGOne][v0.97-20020531].bin
+89635CAD;4194304;280200AFD00040;classic;3;Final Fantasy II (2001-05-03)(Squaresoft)[tr en Erik Zirkle][v0.10-20020421].bin
+BBD3EA97;4194304;280900DBEF0040;database;3;Final Fantasy IV (2002-03-28)(Squaresoft)[tr en MottZilla][v0.4].bin
+E677A591;4194304;280900DBEF0040;database;3;Final Fantasy IV (2002-03-28)(Squaresoft)[tr en MottZilla][v0.5-20040711].bin
+02882FFE;1048576;680400F53E0010;trampoline;8;Fire Lancer (demo-playable) (2018-12-25)(Onigiri Service)(US).bin
+69D8D433;2097152;160100E7D90020;database;7;Flash Koibito-kun (2000-12-28)(Kobunsha)[SWJ-KBSC01].bin
+55FA0DDE;4194304;013B0063840040;database;3;From TV Animation One Piece - Chopper no Daibouken (2003-10-16)(Bandai)[t][SWJ-BANC3B].bin
+F8A1DD2B;8388608;012900FD2E0080;classic;3;From TV Animation One Piece - Grand Battle Swan Colosseum (2002-07-12)(Bandai)[SWJ-BANC29].bin
+427056C4;4194304;0119008FA60040;nopsled;2;From TV Animation One Piece - Niji no Shima Densetsu (2001-09-13)(Bandai)[SWJ-BANC19].bin
+B27093E9;4194304;0119008FA60040;nopsled;2;From TV Animation One Piece - Niji no Shima Densetsu (2001-09-13)(Bandai)[h2][SWJ-BANC19].bin
+5B135CF3;4194304;0119008FA60040;nopsled;2;From TV Animation One Piece - Niji no Shima Densetsu (2001-09-13)(Bandai)[h][SWJ-BANC19].bin
+205503C3;4194304;011E00F8850040;classic;3;From TV Animation One Piece - Treasure Wars (2002-01-03)(Bandai)[SWJ-BANC1E].bin
+0D1048F0;8388608;013300EAFD0080;classic;3;From TV Animation One Piece - Treasure Wars 2 - Buggy Land he Youkoso (2002-12-20)(Bandai)[SWJ-BANC33].bin
+3DF3E34C;4194304;011E01F4F20040;classic;3;From TV Animation One Piece - Treasure Wars Rev 1 (2002)(Bandai)[SWJ-BANC1E].bin
+7563E7AE;8388608;2810004C260080;database;5;Front Mission (2002-07-12)(Squaresoft)[h][SWJ-SQRC10].bin
+67CBA5C9;2097152;2E0102B9CB0020;classic;5;Gensou Maden Saiyuuki Retribution - Hi no Ataru Basho de (2001-06-07)(Movic)[f SRAM Sekret][SWJ-SESC01].bin
+BC944A98;4194304;012B00B3FD0040;trampoline;4;Golden Axe (2002-02-28)(Bandai)[SWJ-BANC2B].bin
+4054B42E;2097152;0B0700BFDF0020;database;3;Guilty Gear Petit (2001-01-25)(Sammy)[h][SWJ-SUMC07].bin
+47E7F6E3;2097152;0B0700BFDF0020;database;3;Guilty Gear Petit (2001-01-25)(Sammy)[t][SWJ-SUMC07].bin
+0AEAB061;4194304;0B0800C6610040;database;3;Guilty Gear Petit 2 (2001-09-27)(Sammy)[h][SWJ-SUMC08].bin
+30DD9CEE;4194304;0B080074650040;classic;6;Guilty Gear Petit 2 (2001-09-27)(Sammy)[t +4 Sekret][SWJ-SUMC08].bin
+0EF67F00;4194304;0B0800C6610040;database;3;Guilty Gear Petit 2 (2001-09-27)(Sammy)[t][SWJ-SUMC08].bin
+0C9CB12C;1048576;01020002B40010;classic;2;GunPey EX (2000-12-09)(Bandai)[SWJ-BANC02].bin
+A97DCCD9;1048576;010200E5EF0010;classic;2;GunPey EX (2000-12-09)(Bandai)[f EEPROM][SWJ-BANC02].bin
+10042A5E;4194304;280601B2B10040;database;3;Hanjuku Hero - Ah, Sekai yo Hanjuku Nare...!! (2002-02-14)(Squaresoft)[h][SWJ-SQRC06].bin
+130AF567;8388608;0139017D260080;database;3;Hunter X Hunter - Greed Island Rev 1 (2003)(Bandai)[SWJ-BANC39].bin
+92BB2E53;4194304;01180003690040;classic;3;Hunter X Hunter - Michibikareshi Mono (2001-08-23)(Bandai)[f EEPROM][SWJ-BANC18].bin
+0F1D6710;4194304;010F0051890040;classic;3;Hunter X Hunter - Sorezore no Ketsui (2001-04-26)(Bandai)[f EEPROM][SWJ-BANC0F].bin
+11DA81E6;4194304;012600B6940040;database;3;Inuyasha - Fuuun Emaki (2002-07-27)(Bandai)[h][SWJ-BANC26].bin
+AA13E9DE;2097152;00008000000008;database;4;Judgement Silversword - Rebirth Edition (2004-02-05)(Qute).bin
+32F3093B;524288;00008000000008;trampoline;4;Judgement Silversword - Rebirth Edition (2004-02-05)(Qute)[h2][u].bin
+77635F20;524288;00008000000008;trampoline;4;Judgement Silversword - Rebirth Edition (2004-02-05)(Qute)[h][u].bin
+FF6580EA;524288;00008000000008;trampoline;4;Judgement Silversword - Rebirth Edition (2004-02-05)(Qute)[t][u].bin
+B338CAE2;4194304;013600DE9B0040;database;3;Kidou Senshi Gundam Seed (2003-03-15)(Bandai)[tr zh][v.20040120].bin
+9B6177E3;4194304;0115005DB60040;classic;3;Last Alive (2001-07-26)(Bandai)[f SRAM Sekret][SWJ-BANC15].bin
+1B6F5F30;4194304;28080094F10040;database;5;Makai Toushi Sa-Ga (2002-03-20)(Squaresoft)[SWJ-SQRC08].bin
+9F6E3F8D;4194304;010E0092380040;classic;5;Meitantei Conan - Yuugure no Koujo (2001-04-05)(Bandai)[SWJ-BANC0E].wsc
+8E123373;2097152;2101002D7C0020;database;3;Memories Off - Festa (2001-03-08)(Kid)[SWJ-KDKC01].bin
+4E9020B3;4194304;160200710F0040;trampoline;5;Mikeneko Holmes - Ghost Panic (2001-04-26)(Kobunsha)[f EEPROM][SWJ-KBSC02].bin
+237F9D72;2097152;2D010062B30020;database;4;Mr. Driller (2001-04-05)(Namco)[t][SWJ-NMCC01].bin
+61E7ED03;2097152;2D010062B30020;database;4;Mr. Driller (2001-04-05)(Namco)[tr en PmHacks][v0.70-20031209].bin
+8CE4652F;2097152;0128000AD10020;port;4;Namco Super Wars (2002-10-31)(Bandai)[SWJ-BANC28].bin
+71556E6A;4194304;0138008ADD0040;database;3;Naruto - Konoha Ninpouchou (2003-03-27)(Bandai)[SWJ-BANC38].bin
+D3092E88;4194304;010D005DAF0040;port;7;Pocket no Naka no Doraemon (2001-05-24)(Bandai)[f SRAM Sekret][SWJ-BANC0D].bin
+76309525;1048576;01100000570010;port;3;Raku Jongg (2001-05-31)(Bandai)[f SRAM Sekret][SWJ-BANC10].bin
+56150D81;2097152;00808000040020;database;2;RUN=DIM - Return to Earth (2002-02-07)(Digital Dream)[h][SWJ-DDJC01].bin
+2460B45A;8388608;012700D4D80080;classic;3;Riviera - Yakusoku no Chi Riviera (2002-07-12)(Bandai)[SWJ-BANC27].bin
+658C4B98;4194304;01350090A00040;database;3;Rockman EXE WS (2003-02-08)(Bandai)[SWJ-BANC35].bin
+A406C9E6;4194304;01350090A00040;database;3;Rockman EXE WS (2003-02-08)(Bandai)[b][SWJ-BANC35].bin
+8AF2F076;4194304;01350090A00040;database;3;Rockman EXE WS (2003-02-08)(Bandai)[tr en][SWJ-BANC35].bin
+4A962513;4194304;01350090A00040;database;3;Rockman EXE WS (2003-02-08)(Bandai)[tr en][a][SWJ-BANC35].bin
+22F779CE;4194304;01350090A00040;database;3;Rockman EXE WS (2003-02-08)(Bandai)[tr pt][SWJ-BANC35].bin
+6DD68086;2097152;012100F1680020;database;3;SD Gundam - Operation U.C. (2002-02-16)(Bandai)[h][SWJ-BANC21].bin
+18ECFFB8;4194304;010B0020D90040;classic;3;SD Gundam Eiyuuden - Musha Densetsu (2001-03-15)(Bandai)[SWJ-BANC0B].bin
+4D21A347;8388608;011200C0C00080;trampoline;3;SD Gundam G-Generation - Gather Beat 2 (2001-06-14)(Bandai)[SWJ-BANC12].bin
+6C029674;4194304;012D00453B0040;classic;3;Shaman King - Asu heno Ishi v1.0 (2002-08-29)(Bandai)[SWJ-BANC2D].bin
+9874E9A2;4194304;000080B5A80040;anyread;7;Star Hearts - Hoshi to Daichi no Shisha - Taikenban (2001)(Bandai)[demo version].bin
+76ADEBD2;4194304;0E0800BB6D0040;database;3;Super Robot Taisen Compact for WonderSwan Color (2001-12-13)(Banpresto)[h][SWJ-BPRC08].bin
+9BD8F08C;4194304;01050002EC0040;classic;3;Terrors 2 (2000-12-21)(Bandai)[SWJ-BANC05].bin
+AD9D62FE;4194304;010500E5090040;classic;3;Terrors 2 (2000-12-21)(Bandai)[f SRAM Sekret][SWJ-BANC05].bin
+C31064F6;1048576;011300BB7E0010;classic;3;Tonpuusou (2001-06-28)(Bandai)[f SRAM Sekret][SWJ-BANC13].bin
+D9401F0A;2097152;28040039D40020;classic;3;Wild Card (2001-03-29)(Squaresoft)[SWJ-SQRC04].bin
+E14E9D36;4194304;2701005E370040;classic;3;With You - Mitsumete Itai (2001-01-25)(Shall Luck)[SWJ-SHLC01].bin
+A44B167E;4194304;270100DEF30040;classic;3;With You - Mitsumete Itai (2001-01-25)(Shall Luck)[f SRAM Sekret][SWJ-SHLC01].bin
+15E55706;2097152;010C00F6FF0020;database;3;Wizardry Scenario 1 - Proving Grounds of the Mad Overlord (2001-03-01)(Bandai)[SWJ-BANC0C].bin
+C0C00FF9;2097152;010C00F6FF0020;database;3;Wizardry Scenario 1 - Proving Grounds of the Mad Overlord (2001-03-01)(Bandai)[tr en][SWJ-BANC0C].bin
+E529D0C1;524288;00000077220004;port;6;Wondersnake (2001)(Kojote - Slanina, Tomasz)(PD)(beta).bin
+D93AB792;524288;000000E3AB0004;port;6;Wondersnake 2 (2003)(Kojote - Slanina, Tomasz)(PD).bin
+66B617D5;4194304;012C005B970040;classic;3;X - Card of Fate (2002-06-27)(Bandai)[SWJ-BANC2C].bin
+3FDAF554;2097152;011F00D25A0020;database;2;XI -sai- Little (2001-12-20)(Bandai)[h][SWJ-BANC1F].bin
+A1768249;131072;000000B1500002;port;3;wondercell v0.1 (2023-06-20)(Kennedy, Joe).bin

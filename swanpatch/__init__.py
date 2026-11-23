@@ -2,4 +2,4 @@
 # SwanShellPatcher - Copyright (C) 2026 Mario Virgili
 """SwanShellPatcher: START + Y1 (back to the SwanShellDX menu) patches for
 WonderSwan / WonderSwan Color ROMs."""
-__version__ = '1.3.2'
+__version__ = '1.3.3'
