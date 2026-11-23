@@ -1,7 +1,16 @@
 name: Build Windows exe
 
+# Every push to main that changes the tool or the patches builds
+# SwanShellPatcher.exe and puts it in the release v<version>
+# (version from swanpatch/__init__.py), created if missing, updated if not.
 on:
   push:
+    branches: [main]
+    paths:
+      - 'swanpatch/**'
+      - 'swanshell_patcher.py'
+      - 'patches/**'
+      - '.github/workflows/build.yml'
     tags: ['v*']
   workflow_dispatch:
 
@@ -18,6 +27,10 @@ jobs:
           python-version: '3.12'
       - name: Install
         run: pip install pyinstaller unicorn capstone
+      - name: Version
+        id: ver
+        shell: bash
+        run: echo "v=$(python -c "import swanpatch;print(swanpatch.__version__)")" >> "$GITHUB_OUTPUT"
       - name: Build
         run: >
           pyinstaller --onefile --name SwanShellPatcher
@@ -31,7 +44,16 @@ jobs:
           name: SwanShellPatcher-windows
           path: dist/SwanShellPatcher.exe
       - name: Release
-        if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: v${{ steps.ver.outputs.v }}
+          target_commitish: ${{ github.sha }}
+          name: SwanShellPatcher ${{ steps.ver.outputs.v }}
+          body: |
+            START + Y1 (back to the SwanShellDX menu) patches for WonderSwan ROMs.
+
+            - **SwanShellPatcher.exe**: Windows, nothing to install (emulated test included). Double-click for the window, or run it from a command prompt: `SwanShellPatcher.exe ROM_OR_FOLDER -o PATCHES`.
+            - Any system: `python swanshell_patcher.py` from the source (optional: `pip install unicorn capstone`).
+
+            Copy the `.Y1P` files to `/NILESWAN/PATCHES/` on the SD card. See the README for the methods and options.
           files: dist/SwanShellPatcher.exe
