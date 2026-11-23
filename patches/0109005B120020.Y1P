@@ -1,5 +1,5 @@
 ; SwanShellDX START+Y1 patch: offset:original:new (hex)
-[Last Stand (Japan)]
+[LastStand (J) (M)]
 crc=CCCAF8A1
 p=120761:E4B5250F00:9A40FE00F0
 p=1FFE40:FFFFFFFFFFFFFFFFFF:9A76FE00F0250F00CB

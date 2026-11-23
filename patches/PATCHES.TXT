@@ -232,3 +232,64 @@ EF5B6B82;4194304;01140067B00040;chatgpt-jp;3;Terrors (J) (M)
 1F10CA75;4194304;36010185B70040;cfunc;13;Rockman EXE - N1 Battle (Japan) (Rev 1).wsc
 CBE53CBF;8388608;010800C1600080;port;3;Dark Eyes - Battle Gate (EN v0.9).wsc
 31020981;8388608;010800C1600080;port;3;Dark Eyes - Battle Gate (EN v0.9, ALL CAPS).wsc
+B18CDC0D;4194304;2F0100AEF90040;classic;5;Alchemist Marie & Elie - Futari no Atelier (J) [!].wsc
+D7A0AB74;4194304;24030043E30040;classic;3;Anaza Hebun - Memory of Those Days (J) [!].wsc
+E2317345;8388608;012A00D3060080;database;2;Arc The Lad - Kijin Fukkatsu (J).wsc
+99027238;2097152;280500A8690020;classic;3;Blue Wing Blitz (J).wsc
+FAAEFBCB;4194304;012E00E9030040;classic;3;Digimon Digital Monsters - D Project (J).wsc
+6CAAD4A2;8388608;013000443E0080;database;3;Digimon Tamers - Battle Spirit V1.5 (J) [!].wsc
+067238D1;2097152;013C00065A0020;trampoline;4;Dragonball (J).wsc
+B7243E88;4194304;28010026DB0040;database;2;Final Fantasy (J) [!].wsc
+F09E752F;4194304;280200F3570040;database;3;Final Fantasy II (J) [!].wsc
+F699D6D1;4194304;280900DBEF0040;database;3;Final Fantasy IV (J) [!].wsc
+8E120B5A;4194304;013B0063840040;classic;3;From TV Animation - One Piece - Chopper no Daibouken (J) [!].wsc
+446E2581;2097152;2E0102FDF50020;database;5;Gensou Maden Saiyuuki Retribution (J) [!].wsc
+9750BC2A;2097152;0B0700BFDF0020;classic;3;Guilty Gear Petit (J).wsc
+D7A12BD5;4194304;0B0800C6610040;classic;3;Guilty Gear Petit 2 (J) [!].wsc
+7F3A14C0;2097152;011A00BE470020;classic;3;Card Captor Sakura - Sakura to Fushigi na Clow Card (J) [M][!].ws
+31E09BED;4194304;280601B2B10040;database;3;Hanjyuku Hero - Aah Sekai yo Hanjuku Nare (J) [!].wsc
+A487B7A8;8388608;013900888D0080;classic;3;Hunter X Hunter - Greed Island (J).wsc
+D0B20C5A;4194304;010F0070670040;classic;3;Hunter X Hunter - Sorezore no Ketsui (J) [!].wsc
+D4061551;4194304;013A00C19C0040;database;3;Kidou Senshi Gundam Giren no Yabou Tokubetsuhen Aoki no Hasha (J) [!].wsc
+15C4552E;2097152;00808000040020;cblock;2;RUN=DIM Return to Earth (J) [!].wsc
+9C98D97D;4194304;28070008890040;port;5;Romancing Saga (J) [!].wsc
+F0ACDA5C;2097152;012100F1680020;port;3;SD Gundam - Operation U.C. (J).wsc
+C60E5162;4194304;010A0050240040;classic;3;SD Gundam Eiyuuden - Eiyuuden Kishi Densetsu (J) [!].wsc
+6ACA1F04;8388608;012F00A5EA0080;classic;3;SD Gundam G Generation - Mono-Eye Gundams (J).wsc
+6E8A792D;2097152;013D005CD20020;database;2;Saint Seiya - Ougon Densetsu Hen Perfect Edition (J).wsc
+E407CABF;524288;0E0400250B0008;classic;3;Lode Runner (J) [M][!].ws
+637ADA93;1048576;05020053500010;classic;3;Magical Drop (J) [M][!].ws
+302499B9;524288;0C0300FA630008;classic;3;Puzzle Bobble (J) [M].ws
+138D1018;4194304;0116008EED0040;port;3;Star Hearts (J) [!].wsc
+16E0D929;4194304;0E0800BB6D0040;classic;3;Super Robot Taisen Compact (J) [!].wsc
+6918C824;8388608;0E090569FE0080;classic;3;Super Robot Taisen Compact 3 (J) (V1.5).wsc
+188CA644;8388608;0E090669E60080;classic;3;Super Robot Taisen Compact 3 (J) (V1.6).wsc
+5793BDDA;4194304;01090050CA0040;database;3;Uchuu Senkan Yamato (J) [!].wsc
+425EB893;1048576;0B04008C4A0010;classic;3;Anchor Field Z (J) [M].ws
+324622C9;16777216;120100F1790100;classic;2;Beat Mania (J) [M][!].ws
+7FFF2520;1048576;0123043B020010;port;3;Chou Aniki - Otoko no Tamafuda (J) [M].ws
+B62E5DD0;4194304;020101538B0040;port;2;Densha de Go! (J) [M].ws
+AF9D8F42;4194304;1A010042D10040;database;2;Densha de Go! 2 (J) [M].ws
+4E467626;1048576;1E010038BC0010;database;4;Engacho! (J) [M][!].ws
+F246A68E;4194304;18070515BC0040;classic;3;Fire Pro Wrestling (J) [M].ws
+A1FB16FC;1048576;1D04002E480010;classic;3;Fishing Freaks - Bass Rise (J) [M].ws
+8655269E;1048576;050100C0220010;classic;3;Side Pocket (J) [M][!].ws
+62D419CD;4194304;25010099270040;database;2;Choujikuu Yousai Macross - True Love Song (J) [M][!].ws
+F2E362B8;1048576;012A00AA120010;port;3;From TV Animation - One Piece - Mezase Kaizoku Ou (J) [M].ws
+A193458C;524288;100100C0050008;database;3;Ganso Jajamaru Kun (J) [M][!].ws
+8FCD6D2C;524288;180800BD7D0008;port;3;Glocal Hexcite (J) [M][!].ws
+6CD1411E;524288;0B060023F10008;port;3;Gomoku Narabe & Reversi Touryuumon (J) [M].ws
+00137E86;1048576;0D0102844A0010;database;4;Gorakuoh TANGO! (J) [M].ws
+8E027330;524288;18050085270008;port;3;Hanafuda Shiyou Yo (J) [M][!].ws
+AA525C04;2097152;190100A2380020;port;2;Harobots (J) [M][!].ws
+70AA800E;4194304;012A022DC50040;classic;3;Hunter X Hunter - Ichi O Tsugu Mono (J) [M][!].ws
+4D103236;1048576;0E020059F70010;port;3;Kakuto Ryori Densetsu Bistro Recipe - Wonder Battle Hen (J) [M].ws
+CCCAF8A1;2097152;0109005B120020;database;3;LastStand (J) [M].ws
+35361250;2097152;010A00ADA80020;anyread;10;Pocket Fighter (J) [M].ws
+14ADBD4B;4194304;26010053620040;classic;3;Ring Infinity (J) [M][!].ws
+301436AC;1048576;012500FABC0010;port;3;Sennou Millenium (J) [M][!].ws
+6F304DCA;4194304;1B0100E6D80040;cfunc;4;Tetsujin 28 Gou (J) [M].ws
+5D40661A;2097152;0E020059F70020;database;3;Kakutou Ryouri Densetsu Bistro Recipe - Wonder Battle Hen (EN v0.9.4).ws
+E55D9672;2097152;0E020059F70020;database;3;Kakutou Ryouri Densetsu Bistro Recipe - Wonder Battle Hen (EN v0.9.4, ALL CAPS).ws
+D465D6EF;2097152;0E020059F70020;database;3;Kakutou Ryouri Densetsu Bistro Recipe - Wonder Battle Hen (EN v0.9.4, Fighting Foodons names).ws
+CFCBEC95;2097152;0E020059F70020;database;3;Kakutou Ryouri Densetsu Bistro Recipe - Wonder Battle Hen (EN v0.9.4, Fighting Foodons names, ALL CAPS).ws
