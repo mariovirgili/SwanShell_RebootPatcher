@@ -19,7 +19,7 @@ F3DB0917;8388608;0129004C380080;auto;3;From TV Animation One Piece - Grand Battl
 8084D4AF;4194304;280601B2B10040;auto;3;Hanjuku Hero - Ah, Sekai yo Hanjuku Nare...!! (Japan) (Rev 1) [T-En v0.9].wsc
 E08BCD72;8388608;0139017D260080;auto;3;Hunter X Hunter - Greed Island (EN v0.9, ALL CAPS).wsc
 F5CA2439;8388608;010F0070670080;auto;3;Hunter X Hunter - Sorezore no Ketsui (Japan) [T-En v0.9].wsc
-77C99C13;2097152;00008000000020;auto;3;Judgement Silversword - Arrange v2.7 (Normal+Arrange, Special Pink).wsc
+77C99C13;2097152;00008000000020;auto;5;Judgement Silversword - Arrange v2.7 (Normal+Arrange, Special Pink).wsc
 9DA4DC24;4194304;01080078CD0040;auto;3;Kaze no Klonoa - Moonlight Museum (Japan) [16 colours TEST v39 4MB, EN v0.8].wsc
 45966D6B;4194304;013A00C19C0040;auto;3;Kidou Senshi Gundam - Giren no Yabou - Tokubetsu Hen - Aoki Hoshi no Hasha English v0.9 ALL CAPS.wsc
 86208283;524288;0E04009BA50008;auto;3;Lode Runner for WonderSwan (EN Color v0.9).wsc
@@ -30,7 +30,7 @@ F7DC7C14;2097152;2101002D7C0020;auto;3;Memories Off - Festa (EN v0.9.1, ALL CAPS
 93049CDA;8388608;011E01F4F20080;auto;3;One Piece - Treasure Wars (EN v0.9 ALL CAPS).wsc
 57BD94D9;16777216;013300EAFD0100;auto;3;One Piece - Treasure Wars 2 (EN v0.9 ALL CAPS).wsc
 85898542;1048576;0104006BB70010;auto;3;Puyo Puyo Tsuu (EN v0.9 Color ALL CAPS).wsc
-72BAE9AE;1048576;0C0300FA630010;auto;3;Puzzle Bobble (Japan) [T-En v0.9.5] (16 colours).wsc
+72BAE9AE;1048576;0C0300FA630008;auto;3;Puzzle Bobble (Japan) [T-En v0.9.5] (16 colours).wsc
 B1856A05;8388608;01270106720080;auto;3;Riviera - Yakusoku no Chi Riviera (Japan) (Rev 1) [T-En v0.9.9].wsc
 A8C02E74;4194304;01350090A00040;auto;3;Rockman EXE WS (J) (patched).wsc
 BCA70F0E;8388608;010A0050240080;auto;3;SD Gundam Eiyuu Den - Kishi Densetsu (EN v0.9.1).wsc
@@ -51,7 +51,7 @@ D536A070;2097152;180201E1720020;auto;3;Clock Tower (J) [M][!] (patched).ws
 63BC5043;1048576;011E000F160010;auto;3;D's Garage 21 Koubo Game - Tane o Maku Tori (English, WonderGate edition).ws
 F67C5588;1048576;1D03001F750010;auto;3;Dokodemo Hamster (English).ws
 3BA04D6B;1048576;01260059BA0010;auto;3;Final Lap 2000 (English, WonderGate edition).ws
-7E701D9E;8388608;18070524AE0080;auto;3;Fire Pro Wrestling for WonderSwan (English).ws
+7E701D9E;8388608;18070524AE0060;auto;3;Fire Pro Wrestling for WonderSwan (English).ws
 BF700918;1048576;1D04007A9D0010;auto;3;Fishing Freaks - Bass Rise for WonderSwan (English).ws
 3A10EC60;524288;100100C0050008;auto;3;Ganso Jajamaru-kun (English, Stage Select edition).ws
 B05CECF4;8388608;012A021B180080;auto;3;Hunter X Hunter - Ishi o Tsugu Mono (English).ws
@@ -60,7 +60,7 @@ B05CECF4;8388608;012A021B180080;auto;3;Hunter X Hunter - Ishi o Tsugu Mono (Engl
 A88BABE0;524288;0E04009BA50008;auto;3;Lode Runner for WonderSwan (English).ws
 C5A88BEB;2097152;010E0090B50020;auto;3;Neon Genesis Evangelion - Shito Ikusei Japan T-En v0.9.1.ws
 189B7610;2097152;010E002B520020;auto;3;Neon Genesis Evangelion Shito Ikusei (J) [M][!] (patched).ws
-BC3C951B;8388608;260100700D0080;auto;3;Ring Infinity (English, Special edition).ws
+BC3C951B;8388608;260100700D0060;auto;3;Ring Infinity (English, Special edition).ws
 FF214908;8388608;2601004FDB0080;auto;3;Ring Infinity (Japan) [T-En v0.9].ws
 3BCD3422;2097152;01130014600020;auto;2;Rockman & Forte - Mirai Kara no Chousen Sha (J) [M][!] (patched).ws
 B9B75EE5;1048576;011F003F2B0010;auto;3;Tare Panda no GunPey (English, Debug edition).ws
@@ -118,7 +118,7 @@ D7438E58;524288;0A02005BEA0008;auto;3;Soccer Yarou! - Challenge the World (J) [M
 8B74F59A;2097152;1F03011CD60020;auto;3;Tanjou - Debut (J) [M][!].ws
 E7C608E5;1048576;010D00EA340010;auto;2;Tekken Card Challenge (J) [M][!].ws
 44B3E67C;1048576;180102E35E0010;auto;3;Tetsuman (J) [M][!].ws
-64AAF392;1048576;17020114E20010;auto;3;Trump Collection 2 (J) [M][!].ws
+64AAF392;1048576;17020114E20008;auto;3;Trump Collection 2 (J) [M][!].ws
 07A3B862;524288;1701015E3E0008;auto;3;Trump Collection Bottom Up Teki Trump Seikatsu (J) [M][!].ws
 86B56511;524288;0A0100A6AA0008;auto;3;Umizuri Ni Ikou (J) [M][!].ws
 812020EF;2097152;240104732A0020;auto;3;Uzumaki - Denshi Kaiki Hen (J) [M][!].ws
@@ -140,10 +140,10 @@ EA3C31FC;4194304;011D014B4E0040;chatgpt;2;Digimon Tamers - Brave Tamer (Japan) [
 62C6550A;2097152;01210043970020;chatgpt;3;SD Gundam - Operation U.C. (Japan) [T-En v0.9.2].wsc
 EBA90D51;8388608;0112008A9E0080;chatgpt;3;SD Gundam G Generation - Gather Beat 2 (English, Stage Select edition).wsc
 F2DF9A5A;4194304;0000009D2A0040;chatgpt;3;SD Gundam G-Generation - Gather Beat (English).ws
-491D7FAA;65536;42010000000001;chatgpt;3;Swan Driving (2015)(Mihai, Sebastian).wsc
+491D7FAA;65536;42010000000010;chatgpt;3;Swan Driving (2015)(Mihai, Sebastian).wsc
 49B527E4;131072;0000003E6A0002;chatgpt;3;wondercell v0.2 (2023-07-16)(Kennedy, Joe).wsc
 23E814CC;131072;FF0001A2F10002;chatgpt;3;Atop the Witch's Tower WS v1.1 (2023-03-29)(asie).wsc
-A0591F00;524288;00000084F10008;chatgpt;2;Wondersnake (2001-09-11)(Kojote - Slanina, Tomasz)(PD).wsc
+A0591F00;524288;00000084F10004;chatgpt;2;Wondersnake (2001-09-11)(Kojote - Slanina, Tomasz)(PD).wsc
 6FE79BB1;524288;00008000000008;chatgpt;2;Tenori-on (Japan) (En).ws
 0C7EBC6F;524288;000080D2A60008;chatgpt;2;Dicing Knight (English v1.0).wsc
 FFF1C0D6;524288;0B050009460008;chatgpt;3;Shogi Touryuumon (J) [M][!].ws
@@ -218,7 +218,7 @@ A10D783A;2097152;110200BEA90020;port-chatgpt;2;Medarot Perfect Edition (English,
 E245AF80;8388608;01250032A90080;manual-cave;6;Kidou Senshi Gundam Vol. 3 - A Baoa Qu (English).wsc
 42912FF4;8388608;011900970E0080;manual-inline;4;From TV Animation One Piece - Niji no Shima Densetsu (English, Special edition).wsc
 0C23D551;2097152;011B00B8240020;manual-far;4;Inuyasha - Kagome no Sengoku Nikki (Japan).wsc
-85C4C9A1;2097152;00008000000020;manual-far;2;Judgement Silversword - Rebirth Edition (Japan) (Rev 5C21).wsc
+85C4C9A1;2097152;00008000000008;trampoline;4;Judgement Silversword - Rebirth Edition (Japan) (Rev 5C21).wsc
 A1FA7EFF;1048576;FFFF008E8F0010;manual-vblank;5;Walking Dudes Demo V1 by Zalas (PD).ws
 29BFFB91;4194304;0080800D290040;manual-inline;4;RUN=DIM - Return to Earth (English).wsc
 45BA9049;4194304;1B0100E6D80040;manual-rewrite;8;Tetsujin 28 Gou (EN v0.9).ws

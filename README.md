@@ -98,7 +98,8 @@ console.
     p=0EEE2F:E6B5909090E4B5:9A00FE00E09090      file offset : original : new
 
 File name = `<publisher><game id><version><checksum><64 KB banks>.Y1P`
-(from the ROM's last 16 bytes). One file can hold several variants (original,
+(from the ROM's last 16 bytes; the banks come from the header's ROM size
+byte, as the menu reads them, not from the size of the file). One file can hold several variants (original,
 translations sharing the same header): the menu applies the first whose
 original bytes all match.
 

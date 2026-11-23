@@ -39,7 +39,7 @@ import os
 import re
 
 from . import classic as _classic
-from .rom import (HOOK, HOOK_PLAIN, RESET, Geometry, Space, far_call, far_jump, rom_key,
+from .rom import (HOOK, HOOK_PLAIN, RESET, Geometry, Space, far_call, far_jump, rom_key, file_key,
                   read_y1p, matches, apply_records)
 
 
@@ -66,14 +66,14 @@ def keypad_free(data):
 # ------------------------------------------------------------------ database
 
 def database(data, db_dirs):
-    key = rom_key(data)
     out = []
-    for d in db_dirs:
-        for name, crc, recs in read_y1p(os.path.join(d, key + '.Y1P')):
-            if matches(data, recs):
-                out.append(Candidate('database', apply_records(data, recs),
-                                     'variant [%s] of %s.Y1P' % (name, key)))
-                return out
+    for key in dict.fromkeys((rom_key(data), file_key(data))):
+        for d in db_dirs:
+            for name, crc, recs in read_y1p(os.path.join(d, key + '.Y1P')):
+                if matches(data, recs):
+                    out.append(Candidate('database', apply_records(data, recs),
+                                         'variant [%s] of %s.Y1P' % (name, key)))
+                    return out
     return out
 
 
@@ -250,6 +250,19 @@ def _size_from_key(key):
     return int(key[-4:], 16) << 16
 
 
+def _listed_sizes(d):
+    """CRC32 -> file size, from the database's PATCHES.TXT (the key holds the
+    header ROM size, which can differ from the size of the file)."""
+    sizes = {}
+    p = os.path.join(d, 'PATCHES.TXT')
+    if os.path.exists(p):
+        for line in open(p, encoding='utf-8', errors='replace'):
+            f = line.strip().split(';')
+            if len(f) > 2 and f[1].isdigit():
+                sizes[f[0].upper()] = int(f[1])
+    return sizes
+
+
 def port(data, db_dirs, caves=False, everything=False):
     """Patches of other ROMs with the same publisher and game id (or all of
     them with everything=True) whose code bytes are found here."""
@@ -260,13 +273,14 @@ def port(data, db_dirs, caves=False, everything=False):
     for d in db_dirs:
         if not os.path.isdir(d):
             continue
+        sizes = _listed_sizes(d)
         for fn in sorted(os.listdir(d)):
             if not fn.upper().endswith('.Y1P') or fn[:-4].upper() == key:
                 continue
             if not everything and fn[:4].upper() != key[:4]:
                 continue
-            src_geo = Geometry(b'\0' * _size_from_key(fn[:-4]))
             for name, crc, recs in read_y1p(os.path.join(d, fn)):
+                src_geo = Geometry(b'\0' * sizes.get(crc, _size_from_key(fn[:-4])))
                 for got in _port_variant(data, geo, src_geo, recs, caves):
                     if got[0] not in seen:
                         seen.add(got[0])

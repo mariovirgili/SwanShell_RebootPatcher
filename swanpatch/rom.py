@@ -39,13 +39,29 @@ KEYPAD = 0xB5
 
 # === identity ===
 
+# ROM size code of the header (footer byte 10) -> 64 KB banks, as the
+# menu reads it (src/menu/launch/launch.c, rom_banks[]); 0 when unknown
+HEADER_BANKS = (2, 4, 8, 16, 32, 48, 64, 96, 128, 256, 512, 1024)
+
+
 def rom_key(data):
-    """<publisher><game id><version><checksum><64 KB banks>, the .Y1P name."""
+    """<publisher><game id><version><checksum><banks>, the .Y1P name. The
+    banks come from the header's ROM size code, as SwanShellDX reads it -
+    not from the file size: some ROMs (translations, homebrew) declare
+    another size, and the menu would look for another file."""
     f = data[-16:]
     publisher, game_id, version = f[6], f[8], f[9]
     checksum = f[14] | (f[15] << 8)
-    banks = (len(data) + 0xFFFF) >> 16
+    banks = HEADER_BANKS[f[10]] if f[10] < len(HEADER_BANKS) else 0
     return '%02X%02X%02X%04X%04X' % (publisher, game_id, version, checksum, banks)
+
+
+def file_key(data):
+    """The key with the banks of the file size (what y1p.py and SwanShellPatcher
+    1.0-1.2 used): looked up too, for .Y1P files made that way."""
+    f = data[-16:]
+    return '%02X%02X%02X%04X%04X' % (f[6], f[8], f[9], f[14] | (f[15] << 8),
+                                     (len(data) + 0xFFFF) >> 16)
 
 
 def rom_crc(data):
