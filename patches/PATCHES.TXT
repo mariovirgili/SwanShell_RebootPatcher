@@ -230,3 +230,5 @@ C11639AF;524288;0B03004F3A0008;chatgpt-jp;3;Armored Unit (J) (M)
 2B40745D;1048576;1102000D1A0010;chatgpt-jp;2;Medarot Perfect Edition - Kuwagata Version (Japan)
 EF5B6B82;4194304;01140067B00040;chatgpt-jp;3;Terrors (J) (M)
 1F10CA75;4194304;36010185B70040;cfunc;13;Rockman EXE - N1 Battle (Japan) (Rev 1).wsc
+CBE53CBF;8388608;010800C1600080;port;3;Dark Eyes - Battle Gate (EN v0.9).wsc
+31020981;8388608;010800C1600080;port;3;Dark Eyes - Battle Gate (EN v0.9, ALL CAPS).wsc
