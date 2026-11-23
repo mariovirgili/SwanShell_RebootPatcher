@@ -1,0 +1,231 @@
+CRC32;size;key;form;records;ROM
+8AB014BD;8388608;2F0100AEF90080;auto;5;Alchemist Marie & Elie - Futari no Atelier [T-En v0.9.4].wsc
+1B7EF909;4194304;2403004F4A0040;auto;3;Another Heaven - Memory of those Days (English).wsc
+C0AA9945;8388608;012A00D3060080;auto;2;Arc the Lad - Kijin Fukkatsu [T-En v0.9].wsc
+49F5C61E;2097152;280500F02C0020;auto;3;Blue Wing Blitz (Japan) [T-En v0.9.1].wsc
+6F6B1DEE;4194304;011A0098580040;auto;3;Cardcaptor Sakura - Sakura to Fushigi na Clow Card (Japan) [T-En v0.9 Color].wsc
+D1F2B3E1;8388608;013000443E0080;auto;3;Digimon Tamers Battle Spirit Ver.1.5 (English v1.0)[xdaniel].wsc
+FD75CE60;4194304;012E02A60F0040;auto;3;Digital Monster - D-Project (Japan) (Rev 2) [T-En v0.9.1].wsc
+E7DB6CBA;4194304;0122027D7C0040;auto;3;Digital Monster Card Game - Ver. WonderSwan Color (Japan) (Rev 2) [T-En v0.9.3].wsc
+84588AC8;4194304;280200F3570040;auto;3;Final Fantasy II [T-En v0.9.2 Big Caps].wsc
+87E34729;4194304;280900DBEF0040;auto;3;Final Fantasy IV [T-En v0.9.3] (debug).wsc
+D3C3A333;4194304;28010026DB0040;auto;2;Final Fantasy [T-En v0.9.3 Big Caps].wsc
+7F92316E;4194304;013B006AB30040;auto;3;From TV Animation One Piece - Chopper no Daibouken [T-En v0.9].wsc
+F3DB0917;8388608;0129004C380080;auto;3;From TV Animation One Piece - Grand Battle Swan Colosseum (English).wsc
+009E038F;2097152;2E0102FDF50020;auto;5;Gensou Maden Saiyuuki Retribution - Hi no Ataru Basho de (EN v0.9).wsc
+5F6A6550;4194304;0B0800FE5F0040;auto;3;Guilty Gear Petit 2 [T-En v0.9].wsc
+48DC741F;2097152;0B07007AB10020;auto;3;Guilty Gear Petit [T-En v0.9].wsc
+16998248;1048576;0102006F700010;auto;2;GunPey EX (English).wsc
+8084D4AF;4194304;280601B2B10040;auto;3;Hanjuku Hero - Ah, Sekai yo Hanjuku Nare...!! (Japan) (Rev 1) [T-En v0.9].wsc
+E08BCD72;8388608;0139017D260080;auto;3;Hunter X Hunter - Greed Island (EN v0.9, ALL CAPS).wsc
+F5CA2439;8388608;010F0070670080;auto;3;Hunter X Hunter - Sorezore no Ketsui (Japan) [T-En v0.9].wsc
+77C99C13;2097152;00008000000020;auto;3;Judgement Silversword - Arrange v2.7 (Normal+Arrange, Special Pink).wsc
+9DA4DC24;4194304;01080078CD0040;auto;3;Kaze no Klonoa - Moonlight Museum (Japan) [16 colours TEST v39 4MB, EN v0.8].wsc
+45966D6B;4194304;013A00C19C0040;auto;3;Kidou Senshi Gundam - Giren no Yabou - Tokubetsu Hen - Aoki Hoshi no Hasha English v0.9 ALL CAPS.wsc
+86208283;524288;0E04009BA50008;auto;3;Lode Runner for WonderSwan (EN Color v0.9).wsc
+DCFF7EA2;2097152;05020053500020;auto;3;Magical Drop for WonderSwan (EN v0.9.1 Colour).wsc
+A4308378;4194304;28080094F10040;auto;5;Makai Toushi Sa-Ga (J) [!] (patched).wsc
+905C44E9;4194304;010E0026F10040;auto-deep;3;Meitantei Conan - Yuugure no Koujo (Japan) [T-En v0.9.6] (debug).wsc
+F7DC7C14;2097152;2101002D7C0020;auto;3;Memories Off - Festa (EN v0.9.1, ALL CAPS).wsc
+93049CDA;8388608;011E01F4F20080;auto;3;One Piece - Treasure Wars (EN v0.9 ALL CAPS).wsc
+57BD94D9;16777216;013300EAFD0100;auto;3;One Piece - Treasure Wars 2 (EN v0.9 ALL CAPS).wsc
+85898542;1048576;0104006BB70010;auto;3;Puyo Puyo Tsuu (EN v0.9 Color ALL CAPS).wsc
+72BAE9AE;1048576;0C0300FA630010;auto;3;Puzzle Bobble (Japan) [T-En v0.9.5] (16 colours).wsc
+B1856A05;8388608;01270106720080;auto;3;Riviera - Yakusoku no Chi Riviera (Japan) (Rev 1) [T-En v0.9.9].wsc
+A8C02E74;4194304;01350090A00040;auto;3;Rockman EXE WS (J) (patched).wsc
+BCA70F0E;8388608;010A0050240080;auto;3;SD Gundam Eiyuu Den - Kishi Densetsu (EN v0.9.1).wsc
+EFB9B834;8388608;010B0020D90080;auto;3;SD Gundam Eiyuu Den - Musha Densetsu (EN v0.9).wsc
+BF5681B5;8388608;012F025F4E0080;auto;3;SD Gundam G Generation - Mono-Eye Gundams (EN v0.9.2, Gigan hack).wsc
+B6C3CD37;2097152;013D005CD20020;auto;2;Saint Seiya - Ougon Densetsu Hen - Perfect Edition (EN v0.9.6, ALL CAPS).wsc
+B6B60B95;2097152;050100C0220020;auto;3;Side Pocket for WonderSwan Color EN v0.9.1.wsc
+E8B10918;4194304;010500F9420040;auto;3;Terrors 2 (English v1.0).wsc
+ECB9D7B5;4194304;01090050CA0040;auto;3;Uchuu Senkan Yamato EN v0.9.wsc
+F1EBE1FD;2097152;280400F10D0020;auto;3;Wild Card (English) v0.1.wsc
+774A3E2A;4194304;270100F9930040;auto;3;With You - Mitsumete Itai (2001-01-25)(Shall Luck)[SWJ-SHLC01] (patched).wsc
+9955C0E1;4194304;012C003C4B0040;auto;3;X - Card of Fate (Japan) [T-En v0.9].wsc
+34A7D483;1048576;0B04002D960010;auto;3;Anchorz Field (English).ws
+513EE998;16777216;120100BC2F0100;auto;2;Beatmania for WonderSwan (English).ws
+1E355E65;4194304;011B0046560040;auto;3;Buffers Evolution (English, WonderGate edition).ws
+CB5FACF7;4194304;16020319320040;auto-deep;3;Chou Denki Card Game - Youfu Makai - Kikuchi Shuukou (English).ws
+D536A070;2097152;180201E1720020;auto;3;Clock Tower (J) [M][!] (patched).ws
+63BC5043;1048576;011E000F160010;auto;3;D's Garage 21 Koubo Game - Tane o Maku Tori (English, WonderGate edition).ws
+F67C5588;1048576;1D03001F750010;auto;3;Dokodemo Hamster (English).ws
+3BA04D6B;1048576;01260059BA0010;auto;3;Final Lap 2000 (English, WonderGate edition).ws
+7E701D9E;8388608;18070524AE0080;auto;3;Fire Pro Wrestling for WonderSwan (English).ws
+BF700918;1048576;1D04007A9D0010;auto;3;Fishing Freaks - Bass Rise for WonderSwan (English).ws
+3A10EC60;524288;100100C0050008;auto;3;Ganso Jajamaru-kun (English, Stage Select edition).ws
+B05CECF4;8388608;012A021B180080;auto;3;Hunter X Hunter - Ishi o Tsugu Mono (English).ws
+411B86DC;1048576;01080078CD0010;auto;3;Kaze no Klonoa - Moonlight Museum (J) [M] (patched).ws
+80C6EF12;1048576;01080078CD0010;auto;3;Kaze no Klonoa - Moonlight Museum (Japan).ws
+A88BABE0;524288;0E04009BA50008;auto;3;Lode Runner for WonderSwan (English).ws
+C5A88BEB;2097152;010E0090B50020;auto;3;Neon Genesis Evangelion - Shito Ikusei Japan T-En v0.9.1.ws
+189B7610;2097152;010E002B520020;auto;3;Neon Genesis Evangelion Shito Ikusei (J) [M][!] (patched).ws
+BC3C951B;8388608;260100700D0080;auto;3;Ring Infinity (English, Special edition).ws
+FF214908;8388608;2601004FDB0080;auto;3;Ring Infinity (Japan) [T-En v0.9].ws
+3BCD3422;2097152;01130014600020;auto;2;Rockman & Forte - Mirai Kara no Chousen Sha (J) [M][!] (patched).ws
+B9B75EE5;1048576;011F003F2B0010;auto;3;Tare Panda no GunPey (English, Debug edition).ws
+F52C80A7;4194304;011400D1890040;auto;3;Terrors (English v1.0-rc5).ws
+AF6BB971;2097152;0E0500E0D10020;auto;3;Time Bokan Series - Bokan Densetsu - Buta mo Odaterya Doronboo (EN v0.9.2).ws
+12AE932C;4194304;010800C1600040;auto;3;Dark Eyes - Battle Gate (2001-05-08)(Bandai)[SWJ-BANC08].wsc
+93E19F13;2097152;1D010212450020;auto;3;Dokodemo Hamster 3 - Odekake Saffron (2000-12-14)(Interbec)[SWJ-BECC01].wsc
+2F9E2560;8388608;2810004C260080;auto;5;Front Mission (2002-07-12)(Squaresoft)[SWJ-SQRC10].wsc
+6887257F;4194304;012B005CC70040;auto;3;Golden Axe (2002-02-28)(Bandai)[t +4 Sekret][SWJ-BANC2B].wsc
+7A29E9A6;1048576;280400E0AF0010;auto;3;Hataraku Chocobo (2000-09-21)(Squaresoft)[SWJ-SQR004].wsc
+6142FD9D;4194304;0134003DEB0040;auto;2;Kinnikuman IIsei - Choujin Seisenshi (2003-01-30)(Bandai)[SWJ-BANC34].wsc
+462F9275;2097152;01200057E40020;auto;2;Kinnikuman IIsei - Dream Tag Match (2002-03-02)(Bandai)[SWJ-BANC20].wsc
+274719F5;2097152;2B0101141D0020;auto;3;Kurupara! (2001-06-14)(Tomukuri)[SWJ-TMCC01].wsc
+DA4479BF;4194304;0115007C950040;auto;3;Last Alive (2001-07-26)(Bandai)[SWJ-BANC15].wsc
+12F10B27;4194304;0106002C090040;auto;3;Namco Wonder Classic (2001-01-18)(Bandai)[SWJ-BANC06].wsc
+34908CB4;4194304;012D01F2BF0040;auto;3;Shaman King - Asu heno Ishi v1.1 (2002-08-29)(Bandai)[SWJ-BANC2D].wsc
+47659B2C;1048576;011300355F0010;auto;3;Tonpuusou (2001-06-28)(Bandai)[SWJ-BANC13].wsc
+DE2208AB;2097152;011100BA8D0020;auto;3;Ultraman - Hikari no Kuni no Shisha (2001-06-21)(Bandai)[SWJ-BANC11].wsc
+086843C8;2097152;010C00F6FF0020;auto;3;Wizardry Scenario 1 - Proving Grounds of the Mad Overlord (2001-03-01)(Bandai)[tr en][a][SWJ-BANC0C].wsc
+25E2BA75;2097152;011F00D25A0020;auto;2;XI -sai- Little (2001-12-20)(Bandai)[SWJ-BANC1F].wsc
+7DA6ACB9;1048576;0E0500E0D10010;auto;3;Bokan Densetsu Buta Mo O Daterya Doronbou (J) [M].ws
+27B3CC18;2097152;010B006B110020;auto;2;Chaos Gear - Michibi Kareshi Mono (J) [M][!].ws
+56E2C069;2097152;1602035EC10020;auto-deep;3;Cho Denki Card Battle Yofu Makai Kikuchi Shugo (J) [M][!].ws
+CCAA4853;2097152;01020233210020;auto;3;Chocobo no Fushigi na Dungeon (J) [M].ws
+C995274B;524288;0801008C2D0008;auto;3;Crazy Climber (J) [M][!].ws
+B1CAEC06;1048576;011E003EEC0010;auto;3;D's Garage 21 Koubo Game - Tane wo Maku Tori (J) [M][!].ws
+B5E675AE;2097152;012C0028FF0020;auto;3;Digital Partner (J) [M][!].ws
+89E7D950;1048576;1D03001F750010;auto;3;Dokodemo Hamster (J) [M][!].ws
+8922DD0B;2097152;1D0200AC470020;auto;2;Fever Sankyo - Koushiki Pachinko Simulation (J) [M].ws
+A1656BBB;1048576;01010099CA0010;auto;3;GunPey (J) [M].ws
+CA3F0B00;2097152;240200B7160020;auto;3;Itou Jun Ni Uzumaki Noroi Simulation (J) [M][!].ws
+945FC213;524288;070100853A0008;auto;3;Keiba Yosou Shien Shinkaron (J) [M][!].ws
+625CC49C;4194304;0134003DEB0040;auto;2;Kinnikuman Nisei Choujin Seisenshi (J) [b1].ws
+3B4C60C6;2097152;21010201EF0020;auto;3;Kiss Yori... - Seaside Serenade (J) [M].ws
+ECFBCB1D;1048576;1D0101BE030010;auto;3;Kyoso Uma Ikusei Simulation Keiba (J) [M].ws
+92FBF7FB;1048576;0112008CD70010;auto;3;Meitantei Conan - Majutsushi no Chousenjou! (J) [M][!].ws
+E226863B;2097152;0127008DE10020;auto-deep;5;Meitantei Conan - Nishi no Meitantei Saidai no Kiki! (J) [M].ws
+9BAAC7BB;524288;2202011E920008;auto;3;Mingle Magnet (J) [M].ws
+53B9FEF8;2097152;011500DFD50020;auto;3;Mobile Suit Gundam MSVS (J) [M][!].ws
+6960B010;4194304;0138008ADD0040;auto;3;Naruto (J) [b1].ws
+4ED8820C;1048576;1F010057450010;auto;3;Nazo Ou Pocket (J) [M].ws
+B5DBCF12;1048576;0B0201B3100010;auto;3;Nice On (J) [M][!].ws
+C1734309;524288;040100287E0008;auto;3;Nobunaga no Yabo (J) [M][!].ws
+631BD97A;524288;0C040065820008;auto;3;Ouchan no Oekaki Logic (J) [M].ws
+812B720D;524288;040400F1790008;auto;3;Rekishi Simulation Sangokushi II (J) [M].ws
+BE6BE690;1048576;0133014A530010;auto;2;Robot Works (As) [M].ws
+AE83F873;2097152;0106031B330020;auto;7;SD Gundam - Emotional Jam (J) [M][!].ws
+21EB4C59;1048576;01200030B20010;auto;3;SD Gundam Gashapon Senki - Episode 1 (J) [M][!].ws
+E385EE88;524288;0402006E4B0008;auto;3;Sangokushi (J) [M].ws
+07A3DD46;2097152;012200D85B0020;auto;3;Senkaiden - TV Animation Senkaiden Houshin Engi Yori (J) [M].ws
+5B76F901;1048576;03010191020010;auto;3;Shin Nihon Pro Wrestling Toukon Retsuden (J) [M].ws
+F00A0330;524288;0129000DC90008;auto;3;Slither Link (J) [M][!].ws
+D7438E58;524288;0A02005BEA0008;auto;3;Soccer Yarou! - Challenge the World (J) [M].ws
+8D83014F;1048576;0C0200E14C0010;auto;2;Space Invaders (J) [M][!].ws
+8B74F59A;2097152;1F03011CD60020;auto;3;Tanjou - Debut (J) [M][!].ws
+E7C608E5;1048576;010D00EA340010;auto;2;Tekken Card Challenge (J) [M][!].ws
+44B3E67C;1048576;180102E35E0010;auto;3;Tetsuman (J) [M][!].ws
+64AAF392;1048576;17020114E20010;auto;3;Trump Collection 2 (J) [M][!].ws
+07A3B862;524288;1701015E3E0008;auto;3;Trump Collection Bottom Up Teki Trump Seikatsu (J) [M][!].ws
+86B56511;524288;0A0100A6AA0008;auto;3;Umizuri Ni Ikou (J) [M][!].ws
+812020EF;2097152;240104732A0020;auto;3;Uzumaki - Denshi Kaiki Hen (J) [M][!].ws
+1860B655;4194304;012800E6350040;auto;3;Wasabi Produce - Street Dancer (J) [M][!].ws
+E252919D;1048576;011900E5530010;auto;3;Wonder Stadium '99 (J) [M].ws
+23BC0309;1048576;0103005D8D0010;auto;3;Wonder Stadium (J) [M].ws
+204CD622;4194304;280700D29F0040;chatgpt;5;Romancing SaGa [T-En v0.9.1].wsc
+F016DFE1;2097152;1F020128190020;chatgpt;3;Sotsugyou (J) [M].ws
+21720754;4194304;013C00065A0040;chatgpt;2;Dragon Ball (Japan) [T-En v0.9.1].wsc
+74A1AE86;4194304;010300CBD70040;chatgpt;4;Digimon Adventure 02 - D1 Tamers (J) [!] (patched).wsc
+EA3C31FC;4194304;011D014B4E0040;chatgpt;2;Digimon Tamers - Brave Tamer (Japan) [T-En Syldra v0.9.3].wsc
+33054FE3;4194304;011400EE740040;chatgpt;3;Digimon Tamers - Digimon Medley (EN v0.9.2).wsc
+77689273;4194304;010100C4C90040;chatgpt;4;Digimon - Anode Tamer & Cathode Tamer - Veedramon Version (2001)(Bandai)(HK).wsc
+00B31FBB
+;2097152;0111003BA90020;chatgpt;4;Makaimura (J) [M].ws
+4F225FA4
+;2097152;1B030062C80020;chatgpt;3;Rainbow Islands - Putty's Party (J) [M] (patched).ws
+19AC67B5;4194304;010700DCA80040;chatgpt;3;Kidou Senshi Gundam Vol. 1 - Side 7 (English).wsc
+62C6550A;2097152;01210043970020;chatgpt;3;SD Gundam - Operation U.C. (Japan) [T-En v0.9.2].wsc
+EBA90D51;8388608;0112008A9E0080;chatgpt;3;SD Gundam G Generation - Gather Beat 2 (English, Stage Select edition).wsc
+F2DF9A5A;4194304;0000009D2A0040;chatgpt;3;SD Gundam G-Generation - Gather Beat (English).ws
+491D7FAA;65536;42010000000001;chatgpt;3;Swan Driving (2015)(Mihai, Sebastian).wsc
+49B527E4;131072;0000003E6A0002;chatgpt;3;wondercell v0.2 (2023-07-16)(Kennedy, Joe).wsc
+23E814CC;131072;FF0001A2F10002;chatgpt;3;Atop the Witch's Tower WS v1.1 (2023-03-29)(asie).wsc
+A0591F00;524288;00000084F10008;chatgpt;2;Wondersnake (2001-09-11)(Kojote - Slanina, Tomasz)(PD).wsc
+6FE79BB1;524288;00008000000008;chatgpt;2;Tenori-on (Japan) (En).ws
+0C7EBC6F;524288;000080D2A60008;chatgpt;2;Dicing Knight (English v1.0).wsc
+FFF1C0D6;524288;0B050009460008;chatgpt;3;Shogi Touryuumon (J) [M][!].ws
+36BF164B;524288;0B060071020008;chatgpt;3;Gomoku Narabe & Reversi - Touryuumon (English).ws
+1C489351;524288;0C01001D020008;chatgpt;3;Shanghai Pocket (J) [M].ws
+5023DB90;524288;1804008AFD0008;chatgpt;3;Taikyoku Igo - Heisei Kiin (Japan).ws
+496B1FB2;524288;180500494C0008;chatgpt;3;Hanafuda Shiyouyo (English).ws
+887AD11F;524288;180800F0230008;chatgpt;3;Glocal Hexcite (English, Sound Test edition).ws
+B159C30D;524288;23010090680008;chatgpt;3;Morita Shougi (J) [M][!].ws
+119AC52D;1048576;012304338A0010;chatgpt-fix;3;Chou Aniki - Otoko no Tamafuda (Japan) (Rev 4) [T-En v0.9].ws
+E7E7FD4C;1048576;0B0103CB500010;chatgpt;3;Mahjong Touryuumon (J) [M][!].ws
+76D6F197;1048576;0D0102844A0010;chatgpt;3;Goraku Ou Tango! (English).ws
+EB995E86;1048576;1002001FA00010;chatgpt;2;Moero !! Pro Yakyu Rookies (J) [M].ws
+0E467D97;1048576;180901B87C0010;chatgpt;3;Sorobang (2000-09-12)(Mechanic Arms)[SWJ-KGTC09].wsc
+7B0CAEA9;1048576;310100FAAB0010;chatgpt;3;Tetris (2002-04-18)(Vanguard)[SWJ-VGDC01].wsc
+2399F778;1048576;68040162DB0010;chatgpt;5;Fire Lancer (demo-playable) (2019-01-03)(Onigiri Service)(US).wsc
+31F0D8F8;1048576;1E010038BC0010;chatgpt;3;Engacho! for WonderSwan (English).ws
+94EA6FFC;2097152;01010054A80020;chatgpt;3;Digimon - Ver. WonderSwan (Hong Kong) (En).ws
+AB59DE2E;2097152;010501C1160020;chatgpt;3;Digital Monster - Ver. WonderSwan (Japan) (Rev 1).ws
+4C48624C;2097152;010700E6000020;chatgpt;2;Kosodate Quiz - Dokodemo My Angel (Japan).ws
+6E9DD148;2097152;011C01DF2F0020;chatgpt;3;Digimon Adventure - Anode Tamer (Japan) (Rev 1).ws
+42AD238B;2097152;011D008B060020;chatgpt;3;Digimon Adventure - Cathode Tamer (Japan).ws
+C6995751;2097152;01250008E70020;chatgpt;3;Sennou Millennium (English, Special edition).ws
+30F6CAAF;2097152;012A00EB280020;chatgpt;3;From TV Animation One Piece - Mezase Kaizoku Ou! (English).ws
+6EDEDAF8;2097152;0132010A3C0020;chatgpt;4;Digimon Adventure 02 - Tag Tamers (Japan) (Rev 1).ws
+7021D54F;2097152;0E0102E2070020;chatgpt;3;Super Robot Taisen Compact (Japan) (Rev 2).ws
+89117B68;2097152;0E020059F70020;chatgpt;3;Kakutou Ryouri Densetsu Bistro Recipe - Wonder Battle Hen (EN v0.9, ALL CAPS).ws
+3B5495DA;2097152;160100E7D90020;chatgpt;7;Flash Koibito-kun (2000-12-28)(Kobunsha)[t][SWJ-KBSC01].wsc
+A3EAD689;2097152;180600D14B0020;chatgpt;3;Metakomi Theraphy - Nee Kiite! (Japan).ws
+5555D95C;2097152;2D010062B30020;chatgpt;4;Mr. Driller (2001-04-05)(Namco)[SWJ-NMCC01].wsc
+0D5171F0;4194304;0017007C1D0040;chatgpt;3;Turntablist - DJ Battle (J) [M][!].ws
+60706555;4194304;010100726B0040;chatgpt;3;Rhyme Rider Kerorican (2000-12-09)(Bandai)[SWJ-BANC01].wsc
+72AFDE86;4194304;0128000AD10040;chatgpt;3;Namco Super Wars (Japan) [T-En v0.9.1 All Caps].wsc
+A8ACDDA0;4194304;020101F8440040;chatgpt;2;Densha de Go! (English).ws
+782877BC;4194304;0E0300FDD40040;chatgpt;3;Super Robot Taisen Compact 2 - Dai-1-bu - Chijou Gekidou Hen (Japan).ws
+ECBB46DE;4194304;0E060491D20040;chatgpt;3;Super Robot Taisen Compact 2 - Dai-2-bu - Uchuu Gekishin Hen (Japan) (Rev 4).ws
+0B0F8981;4194304;0E0702A3860040;chatgpt;3;Super Robot Taisen Compact 2 - Dai-3-bu - Ginga Kessen Hen (Japan) (Rev 2).ws
+D75EFFC2;4194304;1602008D540040;chatgpt;6;Mikeneko Holmes - Ghost Panic (2001-04-26)(Kobunsha)[SWJ-KBSC02].wsc
+796D9DB0;4194304;190100BE7B0040;chatgpt;2;Harobots (English, Special edition).ws
+CB01825F;4194304;1A010042D10040;chatgpt;2;Densha de Go! 2 (EN v0.9.1).ws
+ED5AEB47;4194304;25010099270040;chatgpt;2;Macross - True Love Song (EN v0.9).ws
+8A8B827C;4194304;330100EE900040;chatgpt;3;Gekitou! Crash Gear Turbo - Gear Champion League (2002-08-10)(Wiz)[SWJ-WIZC01].wsc
+C2F3CCBD;8388608;01160063750080;chatgpt;3;Star Hearts - Hoshi to Daichi no Shisha (English).wsc
+91117D1B;8388608;0601007DDD0080;chatgpt;3;Tokyo Majin Gakuen Fuju Fuuroku (J) [M][!].ws
+AF24F95C;8388608;320100F0590080;chatgpt;3;Gransta Chronicle (2002-06-13)(Megatron)[SWJ-MGTC01].wsc
+624C7B55;4194304;010A00BD290040;chatgpt-profile;2;Pocket Fighter (English, Extras Unlocked).ws
+43BD6D16;8388608;011700F64E0080;chatgpt-profile;2;Kidou Senshi Gundam Vol. 2 - Jaburo (English).wsc
+814AD964;4194304;180300760A0040;chatgpt-profile;2;Bakusou Dekotora Densetsu for WonderSwan (English, Special edition).ws
+90F7E6D6;1048576;2001018FE10010;chatgpt-profile;2;Pro Mahjong Kiwame (J) [M][!].ws
+2B61BB2B;4194304;010D00683F0040;chatgpt-exp;7;Pocket no Naka no Doraemon (2001-05-24)(Bandai)[SWJ-BANC0D].wsc
+11D3625F;8388608;013800257C0080;auto;3;Naruto - Konoha Ninpouchou (English).wsc
+B5EA1DE0;8388608;0E09067E410080;auto;3;Super Robot Taisen Compact 3 (English).wsc
+62240306;4194304;0E0800A1BD0040;auto;3;Super Robot Taisen Compact for WonderSwan Color (English).wsc
+A041F407;2097152;010B00AAEB0020;auto;2;Chaos Gear - Michibikareshi Mono (English).ws
+6B22E5D1;4194304;1602037B340040;auto-deep;3;Chou Denki Card Game - Youfu Makai - Kikuchi Shuukou (English) (1).ws
+88CFF1A6;4194304;012C0074FE0040;auto;3;Digital Partner (English).ws
+4CB3DAEE;2097152;1F0301BDCF0020;auto;3;Tanjou Debut for WonderSwan (English, Original Quiz edition).ws
+9B24E923;2097152;2401048F390020;auto;3;Uzumaki - Denshi Kaiki Hen (English).ws
+EEA440C8;4194304;010C0192FE0040;auto;3;Vaitz Blade (English).ws
+8BA49DAB;4194304;0131012CE80040;auto;3;Battle Spirit - Digimon Frontier (Japan) (Rev 1).wsc
+9402BCA9;4194304;0118001FAE0040;auto;3;Hunter X Hunter - Michibikareshi Mono (Japan).wsc
+3FF5791F;4194304;012600B6940040;auto-deep;3;Inuyasha - Fuuun Emaki (Japan).wsc
+44453234;4194304;01320083970040;auto;7;Inuyasha - Kagome no Yume Nikki (Japan).wsc
+BCE15137;4194304;013600DE9B0040;auto;3;Kidou Senshi Gundam Seed (Japan).wsc
+9F35D00F;4194304;01040089400040;auto;3;Senkaiden Ni - TV Animation Senkaiden Houshin Engi Yori (Japan).wsc
+4C72E4EF;1048576;0110003A000010;port-chatgpt;3;Raku Jongg (English).wsc
+B2D98B01;524288;0B0300BF000008;port-chatgpt;3;Armored Unit (English).ws
+66242FE6;1048576;0124018AE90010;port-chatgpt;4;Langrisser Millennium WS - The Last Century (English).ws
+FC293A2E;2097152;0109005B120020;chatgpt;3;Last Stand (English).ws
+375E929E;2097152;110100E3DB0020;port-chatgpt;2;Medarot Perfect Edition (English, Kabuto Version).ws
+A10D783A;2097152;110200BEA90020;port-chatgpt;2;Medarot Perfect Edition (English, Kuwagata Version).ws
+E245AF80;8388608;01250032A90080;manual-cave;6;Kidou Senshi Gundam Vol. 3 - A Baoa Qu (English).wsc
+42912FF4;8388608;011900970E0080;manual-inline;4;From TV Animation One Piece - Niji no Shima Densetsu (English, Special edition).wsc
+0C23D551;2097152;011B00B8240020;manual-far;4;Inuyasha - Kagome no Sengoku Nikki (Japan).wsc
+85C4C9A1;2097152;00008000000020;manual-far;2;Judgement Silversword - Rebirth Edition (Japan) (Rev 5C21).wsc
+A1FA7EFF;1048576;FFFF008E8F0010;manual-vblank;5;Walking Dudes Demo V1 by Zalas (PD).ws
+29BFFB91;4194304;0080800D290040;manual-inline;4;RUN=DIM - Return to Earth (English).wsc
+45BA9049;4194304;1B0100E6D80040;manual-rewrite;8;Tetsujin 28 Gou (EN v0.9).ws
+8FC9E145;4194304;010C01DE390040;chatgpt-jp;3;Vaitz Blade (Japan) (Rev 1)
+FE4FF701;1048576;011000751F0010;chatgpt-jp;3;Raku Jongg (2001-05-31)(Bandai)(SWJ-BANC10)
+9E0854E2;1048576;012401C7B40010;chatgpt-jp;3;Langrisser Millennium WS - The Last Century (Japan) (Rev 1)
+C11639AF;524288;0B03004F3A0008;chatgpt-jp;3;Armored Unit (J) (M)
+12FB8B28;1048576;11010020350010;chatgpt-jp;2;Medarot Perfect Edition - Kabuto Version (Japan)
+2B40745D;1048576;1102000D1A0010;chatgpt-jp;2;Medarot Perfect Edition - Kuwagata Version (Japan)
+EF5B6B82;4194304;01140067B00040;chatgpt-jp;3;Terrors (J) (M)
