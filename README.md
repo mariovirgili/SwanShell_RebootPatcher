@@ -16,7 +16,7 @@ it looks at a ROM, finds how the game reads the keypad, writes the patch and
   to the releases.
 - The ROM files are **only read**: the patch is applied by the menu, in RAM,
   when the game starts. It can also write a patched copy or an IPS.
-- 224 patches already made (most of the commercial library, translations and
+- 225 patches already made (most of the commercial library, translations and
   homebrew) are included in `patches/`.
 
 ## Use
@@ -59,6 +59,7 @@ this order:
 | `classic+` | | the same, with the hook in any free space |
 | `trampoline` | DAA delays, no delay, code after the read | the read and the instructions around it move to a small routine in free space that calls the hook |
 | `port` | translations, revisions, expanded ROMs | a patch of another version of the game (same publisher and game id): the same code is looked for at another offset, the new code is moved if its place is no longer free |
+| `cfunc` | games in C calling `inportb(0xB5)` / `outportb(0xB5, group)` | the keypad function is rewritten more compactly (direct `in`/`out`, no reloaded pointers, empty delay loops shortened, every jump fixed) and the check goes in the bytes it frees: no free space needed |
 | `inportb` | games written in C | the function `inportb(port)` (`mov dx,[bp+6] / in al,dx`) jumps to a copy that also checks START+Y1 when it reads port `B5h`, group `40h` |
 | `nopsled` | long runs of NOPs used as a delay | the check and the reset are written in the NOPs themselves: no free space needed, works in banked code |
 | `cblock` | C code copying keys bit by bit (`test/je/or`) | the block is rewritten in a few bytes, the check and the reset go in the bytes it frees |

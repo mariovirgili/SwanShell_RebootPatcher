@@ -48,6 +48,8 @@ def _candidates(name, data, opt):
     if name == 'port':
         got = methods.port(data, opt.db_dirs, opt.caves, opt.port_all)
         return got, 'no other version in the database'
+    if name == 'cfunc':
+        return methods.cfunc(data)
     if name == 'inportb':
         return methods.inportb(data, opt.caves)
     if name == 'nopsled':

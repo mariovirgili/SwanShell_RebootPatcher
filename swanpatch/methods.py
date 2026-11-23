@@ -15,6 +15,10 @@ emu.py; None = the standard tests on the patched button reads).
     port        a patch made for another version of the game (translation,
                 revision, expanded ROM): the same code found at another
                 offset, the new code moved if its place is no longer free
+    cfunc       games in C whose keypad function calls inportb(0xB5) and
+                outportb(0xB5, group): the function is rewritten more compactly
+                (direct in/out, no reloaded pointers, jumps fixed) and the
+                check goes in the bytes it frees (see cfunc.py)
     inportb     games in C that read the keys with a function
                 inportb(port) (mov dx,[bp+6] / in al,dx): the function jumps
                 to a copy that also checks START + Y1 on port 0B5h
@@ -570,6 +574,17 @@ def cblock(data):
     return [Candidate('cblock', bytes(work), 'blocks at ' + ', '.join(notes), tests)], ''
 
 
+# ------------------------------------------------------------------ cfunc
+
+def cfunc(data):
+    from . import cfunc as _cf
+    got = _cf.cfunc(data)
+    if got[0] is None:
+        return [], got[1]
+    work, notes, tests = got
+    return [Candidate('cfunc', work, 'C function at ' + ', '.join(notes), tests)], ''
+
+
 # ------------------------------------------------------------------ anyread
 
 def _is_read(b, p):
@@ -694,5 +709,5 @@ def vblank(data, caves=False):
     return [Candidate('vblank', bytes(work), 'VBlank handler at ' + ', '.join(notes), tests)], ''
 
 
-ORDER = ('database', 'classic', 'classic+', 'trampoline', 'port', 'inportb', 'nopsled',
+ORDER = ('database', 'classic', 'classic+', 'trampoline', 'port', 'cfunc', 'inportb', 'nopsled',
          'cblock', 'anyread', 'vblank')

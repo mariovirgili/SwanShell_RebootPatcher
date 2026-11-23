@@ -229,3 +229,4 @@ C11639AF;524288;0B03004F3A0008;chatgpt-jp;3;Armored Unit (J) (M)
 12FB8B28;1048576;11010020350010;chatgpt-jp;2;Medarot Perfect Edition - Kabuto Version (Japan)
 2B40745D;1048576;1102000D1A0010;chatgpt-jp;2;Medarot Perfect Edition - Kuwagata Version (Japan)
 EF5B6B82;4194304;01140067B00040;chatgpt-jp;3;Terrors (J) (M)
+1F10CA75;4194304;36010185B70040;cfunc;13;Rockman EXE - N1 Battle (Japan) (Rev 1).wsc
