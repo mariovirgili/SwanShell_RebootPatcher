@@ -107,14 +107,3 @@ SwanShellDX and this tool: Mario Virgili with Claude (Anthropic).
 Part of the bundled patches were first made with ChatGPT's SwanY1P tool
 and checked here. Keypad and hardware documentation: [WSdev wiki](https://ws.nesdev.org/).
 No ROM is included in this repository.
-
----
-
-## In italiano
-
-Crea le patch START + Y1 (torna al menu) per SwanShellDX. Uso:
-`python swanshell_patcher.py` (finestra) oppure
-`python swanshell_patcher.py cartella_rom -o PATCHES`, poi copia i `.Y1P` in
-`/NILESWAN/PATCHES/` sulla SD. Le ROM vengono solo lette. Con
-`pip install unicorn capstone` ogni patch è provata su una CPU emulata prima
-di essere salvata.
