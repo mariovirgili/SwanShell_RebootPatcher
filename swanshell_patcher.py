@@ -118,6 +118,9 @@ def main(argv):
             return 0
         elif a == '--version':
             print('SwanShellPatcher', __version__)
+            print('License: GNU GPL version 3 or later <https://www.gnu.org/licenses/gpl-3.0.html>.')
+            print('This is free software: you are free to change and redistribute it.')
+            print('There is NO WARRANTY, to the extent permitted by law.')
             return 0
         else:
             paths.append(a)
@@ -144,7 +147,7 @@ def gui():
         print(__doc__)
         return 2
     root = tk.Tk()
-    root.title('SwanShellPatcher %s - START + Y1' % __version__)
+    root.title('SwanShellPatcher %s - START + Y1 - GPL v3' % __version__)
     roms = []
     outv = tk.StringVar(value=os.path.join(os.path.expanduser('~'), 'PATCHES'))
     y1p, rom, ips = tk.BooleanVar(value=True), tk.BooleanVar(value=False), tk.BooleanVar(value=False)

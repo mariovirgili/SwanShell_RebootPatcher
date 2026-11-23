@@ -35,6 +35,7 @@ jobs:
         run: >
           pyinstaller --onefile --name SwanShellPatcher
           --add-data "patches;patches"
+          --add-data "LICENSE;."
           swanshell_patcher.py
       - name: Smoke test
         run: dist\SwanShellPatcher.exe --version
@@ -54,5 +55,9 @@ jobs:
             - **SwanShellPatcher.exe**: Windows, nothing to install. Double-click for the window, or run it from a command prompt: `SwanShellPatcher.exe ROM_OR_FOLDER -o PATCHES`.
             - Any system: `python swanshell_patcher.py` from the source (Python 3, no other package needed).
 
+            License: GNU GPL v3 or later (LICENSE).
+
             Copy the `.Y1P` files to `/NILESWAN/PATCHES/` on the SD card. See the README for the methods and options.
-          files: dist/SwanShellPatcher.exe
+          files: |
+            dist/SwanShellPatcher.exe
+            LICENSE
