@@ -16,7 +16,7 @@ it looks at a ROM, finds how the game reads the keypad, writes the patch and
   to the releases.
 - The ROM files are **only read**: the patch is applied by the menu, in RAM,
   when the game starts. It can also write a patched copy or an IPS.
-- 225 patches already made (most of the commercial library, translations and
+- 224 patches already made (most of the commercial library, translations and
   homebrew) are included in `patches/`.
 
 ## Use
