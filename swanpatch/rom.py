@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SwanShellPatcher - Copyright (C) 2026 Mario Virgili
 """ROM identity, memory map, free space and patch files (.Y1P, IPS).
 
 Everything here is plain Python 3 (standard library only).

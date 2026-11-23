@@ -21,7 +21,6 @@ it looks at a ROM, finds how the game reads the keypad, writes the patch and
 
 ## Use
 
-    pip install unicorn capstone        # optional, for the emulated test
     python swanshell_patcher.py          # window
     python swanshell_patcher.py ROM_OR_FOLDER... [-o PATCHES]
 
@@ -77,9 +76,10 @@ patch made that way is marked *test it on the console*.
 
 ## The emulated test
 
-With [Unicorn](https://www.unicorn-engine.org/) installed, every patch is
-run before it is saved: the game's routine, original and patched, from the
-group select before the read to the end of the patched bytes, holding none,
+Every patch is run before it is saved, on a small interpreter of the
+WonderSwan's CPU (NEC V30MZ, 8086/80186 instructions) written for this tool
+(`swanpatch/cpu.py`, plain Python): the game's routine, original and
+patched, from the group select before the read to the end of the patched bytes, holding none,
 A, B, START, Y1, START+A, X1 and Y2. The patched run must end in exactly the
 same state (registers, RAM, keypad group); with START+Y1 it must reach the
 reset. Verdicts: `OK`, `FAIL` (not saved), `UNVERIFIED` (the test could not
@@ -112,3 +112,14 @@ SwanShellDX and this tool: Mario Virgili with Claude (Anthropic).
 Part of the bundled patches were first made with ChatGPT's SwanY1P tool
 and checked here. Keypad and hardware documentation: [WSdev wiki](https://ws.nesdev.org/).
 No ROM is included in this repository.
+
+## License
+
+[GNU GPL version 3](LICENSE) or (at your option) any later version.
+
+The hook and the reset sequence come from swanshell / SwanShellDX
+(the reset follows `src/bootstub/patches/freya_soft_reset.s` by asie,
+GPL-3.0-or-later). The tool has no dependency besides Python 3 and does not
+include code from nileswan or libnile. The `.Y1P` files in `patches/` are
+data (lists of byte changes) and carry no game code beyond the few original
+bytes each record has to match.

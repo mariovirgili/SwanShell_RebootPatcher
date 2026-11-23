@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SwanShellPatcher - Copyright (C) 2026 Mario Virgili
 """Tries the methods in order on one ROM and keeps the first patch that the
 emulated test accepts (see methods.py and emu.py)."""
 import os
@@ -89,7 +91,7 @@ def patch_rom(data, name, opt):
             head = '%-10s %s  %s%s' % (mname, verdict, c.note, ('  [' + c.risk + ']') if c.risk else '')
             res.lines.append(head)
             res.lines += ['             ' + l for l in lines]
-            if verdict == 'UNVERIFIED' and opt.verify and emu.AVAILABLE:
+            if verdict == 'UNVERIFIED' and opt.verify:
                 # the test could not run (e.g. the read is reached through
                 # far calls): keep it only if nothing better turns up
                 if fallback is None:

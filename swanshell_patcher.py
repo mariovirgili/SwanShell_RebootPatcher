@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SwanShellPatcher - Copyright (C) 2026 Mario Virgili
 """SwanShellPatcher - START + Y1 "back to the menu" patches for WonderSwan ROMs.
 
     python swanshell_patcher.py                      window (Tk)
@@ -20,7 +22,7 @@ Options:
                        (may be graphics: test the game on the console)
     --port-all         port: try every known patch, not only the same game
     --all              try every method and report all that work
-    --no-verify        do not run the emulated test (Unicorn)
+    --no-verify        do not run the emulated test
     -q, --quiet        one line per ROM
 
 The ROM files are only read. Exit code: 0 if every ROM got a patch.
@@ -32,7 +34,7 @@ HERE = os.path.dirname(os.path.abspath(sys.argv[0] if not getattr(sys, 'frozen',
                                        else sys.executable))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from swanpatch import __version__, emu                       # noqa: E402
+from swanpatch import __version__                            # noqa: E402
 from swanpatch.patcher import Options, patch_rom, save        # noqa: E402
 from swanpatch.rom import ROM_EXTS                            # noqa: E402
 
@@ -126,9 +128,6 @@ def main(argv):
     if not roms:
         print(__doc__)
         return 2
-    if opt.verify and not emu.AVAILABLE:
-        print('note: Unicorn is not installed, patches are not checked '
-              '(pip install unicorn capstone)')
     done = run(roms, opt, out, rom_dir, ips_dir, quiet)
     print('%d of %d ROMs patched' % (done, len(roms)))
     return 0 if done == len(roms) else 1
@@ -150,7 +149,7 @@ def gui():
     outv = tk.StringVar(value=os.path.join(os.path.expanduser('~'), 'PATCHES'))
     y1p, rom, ips = tk.BooleanVar(value=True), tk.BooleanVar(value=False), tk.BooleanVar(value=False)
     usedb, caves, verify, allm = (tk.BooleanVar(value=True), tk.BooleanVar(value=False),
-                                  tk.BooleanVar(value=emu.AVAILABLE), tk.BooleanVar(value=False))
+                                  tk.BooleanVar(value=True), tk.BooleanVar(value=False))
     top = tk.Frame(root)
     top.pack(fill='x', padx=8, pady=6)
     lbl = tk.Label(top, text='No ROM selected', anchor='w')
@@ -207,8 +206,6 @@ def gui():
                 % (n, len(args[0])))
         threading.Thread(target=work, daemon=True).start()
     tk.Button(root, text='Patch', command=go, width=20).pack(pady=(0, 8))
-    if not emu.AVAILABLE:
-        say('Unicorn is not installed: patches will not be checked (pip install unicorn capstone).')
     root.mainloop()
     return 0
 

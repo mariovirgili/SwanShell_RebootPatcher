@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SwanShellPatcher - Copyright (C) 2026 Mario Virgili
 """The ways a START + Y1 reset can be put into a WonderSwan game.
 
 Every method takes the ROM (bytes) and returns a list of Candidate: the
@@ -34,7 +36,7 @@ import re
 
 from . import classic as _classic
 from .rom import (HOOK, HOOK_PLAIN, RESET, Geometry, Space, far_call, far_jump, rom_key,
-                  read_y1p, matches, apply_records, diff_records)
+                  read_y1p, matches, apply_records)
 
 
 class Candidate:
@@ -370,7 +372,6 @@ def inportb(data, caves=False):
         head = b'\x55' + mov_bp + push + b'\x8B\x56\x06\xEC'
         tail = clr + pop + b'\x5D\xCB'
         y = b'\x51\xB0\x10\xE6\xB5' + _wait() + b'\xE4\xB5\x88\xC4\xB0\x40\xE6\xB5' + _wait()
-        after_y = b'\xF6\xC4\x01' + _jcc(0x75, 3) + b'\x59\x58\x9D'
         # layout: head, cmp dx,B5, jne done, pushf, test al,2, jz popf,
         # push ax, and al,70h, cmp al,40h, jne popax, y-read, test ah,1,
         # jnz reset, pop cx, popax: pop ax, popf: popf, done: tail, reset
@@ -439,7 +440,6 @@ def _self_check():
 
 
 def nopsled(data, min_nops=24):
-    geo = Geometry(data)
     work = bytearray(data)
     tests, notes = [], []
     for m in re.finditer(rb'\xB0\x40\xE6\xB5(\x90{%d,})\xE4\xB5' % min_nops, data):

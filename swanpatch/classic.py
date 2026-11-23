@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SwanShellPatcher - Copyright (C) 2026 Mario Virgili
 """The classic patch: the same search and the same code as the SwanShellDX
 menu does at launch (src/menu/launch/launch_patch.c), from y1p.py.
 

@@ -1,47 +1,30 @@
-"""Checks a patch by running the game's code, original and patched, on an
-emulated V30MZ (x86 16-bit) CPU with the Unicorn engine.
-
-    pip install unicorn capstone
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SwanShellPatcher - Copyright (C) 2026 Mario Virgili
+"""Checks a patch by running the game's code, original and patched, on the
+small V30MZ interpreter in cpu.py.
 
 For every patched spot the routine runs from its start (the group select
 before the button read) to the end of the patched bytes, with each of
-these keys held: none, A, START, Y1, START+A, X1, B. The patched run must
-end in exactly the same state as the original one (registers, RAM, the
-keypad group selected). With START + Y1 held the patched run must reach the
-soft reset (the write DDh to port E2h, or FFFF:0000).
+these keys held: none, A, B, START, Y1, START+A, X1, Y2. The patched run
+must end in exactly the same state as the original one (registers, RAM,
+the keypad group selected, the other ports written). With START + Y1 held
+the patched run must reach the soft reset (the write DDh to port E2h, or
+FFFF:0000).
 
 The patch is fine for the CPU; it is not a test of the whole game (timing,
 graphics in a code cave...): play it on the console as well.
 """
-try:
-    from unicorn import Uc, UcError, UC_ARCH_X86, UC_MODE_16, UC_HOOK_CODE, UC_HOOK_INSN
-    from unicorn.x86_const import (UC_X86_REG_AX, UC_X86_REG_BX, UC_X86_REG_CX, UC_X86_REG_DX,
-                                   UC_X86_REG_SI, UC_X86_REG_DI, UC_X86_REG_BP, UC_X86_REG_SP,
-                                   UC_X86_REG_FLAGS, UC_X86_REG_ES, UC_X86_REG_DS, UC_X86_REG_SS,
-                                   UC_X86_REG_CS, UC_X86_REG_IP, UC_X86_INS_IN, UC_X86_INS_OUT)
-    AVAILABLE = True
-except ImportError:                                  # pragma: no cover
-    AVAILABLE = False
-
-try:
-    from capstone import Cs, CS_ARCH_X86, CS_MODE_16
-    _MD = Cs(CS_ARCH_X86, CS_MODE_16)
-except ImportError:                                  # pragma: no cover
-    _MD = None
-
+from .cpu import CPU, CPUError, decode, AX, CX, DX, BX, SP, BP, SI, DI, ES, CS, SS, DS
 from .rom import Geometry
+
 
 COMBOS = (('none', {}), ('A', {'B': 4}), ('B', {'B': 8}), ('START', {'B': 2}), ('Y1', {'Y': 1}),
           ('START+A', {'B': 6}), ('X1', {'X': 1}), ('Y2', {'Y': 2}))
 RESET_KEYS = {'B': 2, 'Y': 1}
 NAMES = 'AX BX CX DX SI DI BP SP FLAGS ES DS SS'.split()
 SENTINEL = 0x0100                     # 0000:0100, return address of test calls
-
-
-def _regs():
-    return [UC_X86_REG_AX, UC_X86_REG_BX, UC_X86_REG_CX, UC_X86_REG_DX, UC_X86_REG_SI,
-            UC_X86_REG_DI, UC_X86_REG_BP, UC_X86_REG_SP, UC_X86_REG_FLAGS, UC_X86_REG_ES,
-            UC_X86_REG_DS, UC_X86_REG_SS]
+_REG = {'AX': AX, 'BX': BX, 'CX': CX, 'DX': DX, 'SI': SI, 'DI': DI, 'BP': BP, 'SP': SP}
+_SEG = {'ES': ES, 'DS': DS, 'SS': SS}
 
 
 class Run:
@@ -50,21 +33,23 @@ class Run:
     def __init__(self, data, start, keys, sel0, stop=None, stack=(), regs=None, ram=None,
                  cs=None, maxins=500000):
         geo = Geometry(data)
-        mu = Uc(UC_ARCH_X86, UC_MODE_16)
-        mu.mem_map(0, 0x110000)
+        mem = bytearray(0x100000)
         for n in range(4, 16):
             b = geo.first + n if geo.banks >= 16 else n % geo.banks
             if geo.banks >= 16 and b >= geo.banks:
                 continue
-            mu.mem_write(n << 16, data[b << 16:(b + 1) << 16])
+            chunk = data[b << 16:(b + 1) << 16]
+            mem[n << 16:(n << 16) + len(chunk)] = chunk
         bank = start >> 16
         seg = geo.seg(bank) if cs is None else cs
         if seg == 0x2000:
-            mu.mem_write(0x20000, data[bank << 16:(bank + 1) << 16])
-            mu.mem_write(0x30000, data[bank << 16:(bank + 1) << 16])
-        self.sel, self.reset, self.err, self.outs = sel0, False, None, []
+            chunk = data[bank << 16:(bank + 1) << 16]
+            mem[0x20000:0x20000 + len(chunk)] = chunk
+            mem[0x30000:0x30000 + len(chunk)] = chunk
+        self.sel, self.reset, self.err, self.outs, self.ended = sel0, False, None, [], False
+        cpu = CPU(mem)
 
-        def hin(uc, port, size, ud):
+        def pin(port, size):
             if port == 0xB5:
                 v = 0
                 if self.sel & 0x10:
@@ -76,51 +61,56 @@ class Run:
                 return (self.sel | v) & 0xFF
             return 0
 
-        def hout(uc, port, size, val, ud):
+        def pout(port, size, val):
             if port == 0xB5:
                 self.sel = val & 0x70
             else:
                 self.outs.append((port, val & 0xFFFF))
             if port == 0xE2 and (val & 0xFF) == 0xDD:
                 self.reset = True
-                uc.emu_stop()
-
-        mu.hook_add(UC_HOOK_INSN, hin, None, 1, 0, UC_X86_INS_IN)
-        mu.hook_add(UC_HOOK_INSN, hout, None, 1, 0, UC_X86_INS_OUT)
+                cpu.stopped = True
+        cpu.port_in, cpu.port_out = pin, pout
         stop_lin = None if stop is None else (seg << 4) + (stop & 0xFFFF)
-        self.ended = False
 
-        def code(uc, addr, size, ud):
-            if addr == SENTINEL or addr == stop_lin:
+        def before(lin):
+            if lin == SENTINEL or lin == stop_lin:
                 self.ended = True
-                uc.emu_stop()
-            elif addr == 0xFFFF0:
+                return True
+            if lin == 0xFFFF0:
                 self.reset = True
-                uc.emu_stop()
-        mu.hook_add(UC_HOOK_CODE, code)
+                return True
+            return False
         init = dict(zip(NAMES, (0x1234, 0x0222, 0x5678, 0x00B5, 0x0444, 0x0566, 0x0E00, 0x0F00)))
         init.update(regs or {})
-        for r, name in zip(_regs(), NAMES):
-            if name in init:
-                mu.reg_write(r, init[name])
-        for r in (UC_X86_REG_DS, UC_X86_REG_ES, UC_X86_REG_SS):
-            mu.reg_write(r, init.get({UC_X86_REG_DS: 'DS', UC_X86_REG_ES: 'ES', UC_X86_REG_SS: 'SS'}[r], 0))
-        sp = init['SP']
+        for name, i in _REG.items():
+            cpu.r[i] = init[name] & 0xFFFF
+        for name, i in _SEG.items():
+            cpu.s[i] = init.get(name, 0) & 0xFFFF
+        if 'FLAGS' in init and regs and 'FLAGS' in regs:
+            cpu.flags = init['FLAGS']
         for w in reversed(stack):
-            sp -= 2
-            mu.mem_write(sp, (w & 0xFFFF).to_bytes(2, 'little'))
-        mu.reg_write(UC_X86_REG_SP, sp)
-        mu.reg_write(UC_X86_REG_CS, seg)
+            cpu.r[SP] = (cpu.r[SP] - 2) & 0xFFFF
+            mem[cpu.r[SP]] = w & 0xFF
+            mem[cpu.r[SP] + 1] = (w >> 8) & 0xFF
+        cpu.s[CS] = seg
+        cpu.ip = start & 0xFFFF
         for a, v in (ram or {}).items():
-            mu.mem_write(a, bytes([v]))
+            mem[a] = v
         try:
-            mu.emu_start((seg << 4) + (start & 0xFFFF), 0x200000, count=maxins)
-        except UcError as e:
+            done = cpu.run(maxins, before)
+            if not done:
+                self.err = 'too many instructions'
+            elif cpu.halted:
+                self.err = 'hlt'
+        except CPUError as e:
             self.err = str(e)
-        self.regs = dict(zip(NAMES, (mu.reg_read(r) for r in _regs())))
+        regs_out = {n: cpu.r[i] for n, i in _REG.items()}
+        regs_out.update({n: cpu.s[i] for n, i in _SEG.items()})
+        regs_out['FLAGS'] = cpu.flags
+        self.regs = regs_out
         # RAM without the test stack (0E00h-0FFFh): a far call leaves its
         # return address below SP, which is not a difference for the game
-        self.ram = bytes(mu.mem_read(0, 0xE00)) + bytes(mu.mem_read(0x1000, 0xF000))
+        self.ram = bytes(mem[0:0xE00]) + bytes(mem[0x1000:0x10000])
 
 
 def same(a, b, ignore=('FLAGS',), sel=True):
@@ -130,16 +120,11 @@ def same(a, b, ignore=('FLAGS',), sel=True):
     return regs and a.ram == b.ram and (a.sel == b.sel or not sel) and a.outs == b.outs
 
 
-_FLAGSET = {'and', 'or', 'xor', 'test', 'cmp', 'add', 'sub', 'inc', 'dec', 'neg'}
-
-
 def _flag_ext(rom, e):
     """One more instruction when it rewrites the flags (and al, 0Fh...)."""
-    if _MD is not None:
-        for ins in _MD.disasm(rom[e:e + 8], e & 0xFFFF):
-            if ins.mnemonic in _FLAGSET:
-                e += ins.size
-            break
+    d = decode(rom, e)
+    if d and d[1] == 'flags':
+        e += d[0]
     return e
 
 
@@ -190,10 +175,14 @@ def find_start(rom, site):
             break
     else:
         return site, 0x40
-    if _MD is not None:
-        for ins in _MD.disasm(rom[start:site], start & 0xFFFF):
-            if ins.mnemonic in ('ret', 'retf', 'iret', 'jmp', 'ljmp'):
-                return site, 0x40
+    p = start
+    while p < site:
+        d = decode(rom, p)
+        if d is None:
+            break
+        if d[1] in ('ret', 'jmp'):
+            return site, 0x40
+        p += d[0]
     return start, sel
 
 
@@ -237,10 +226,8 @@ def bx_values(records):
 
 
 def verify(orig, new, records, tests=None):
-    """(verdict, lines). verdict: 'OK', 'FAIL' or 'UNVERIFIED' (no Unicorn,
-    or no test could run)."""
-    if not AVAILABLE:
-        return 'UNVERIFIED', ['Unicorn not installed (pip install unicorn capstone): not checked']
+    """(verdict, lines). verdict: 'OK', 'FAIL' or 'UNVERIFIED' (no test
+    could run)."""
     tests = tests if tests is not None else site_tests(orig, records)
     if not tests:
         return 'UNVERIFIED', ['nothing to run']

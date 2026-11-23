@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install
-        run: pip install pyinstaller unicorn capstone
+        run: pip install pyinstaller
       - name: Version
         id: ver
         shell: bash
@@ -35,7 +35,6 @@ jobs:
         run: >
           pyinstaller --onefile --name SwanShellPatcher
           --add-data "patches;patches"
-          --collect-all unicorn --collect-all capstone
           swanshell_patcher.py
       - name: Smoke test
         run: dist\SwanShellPatcher.exe --version
@@ -52,8 +51,8 @@ jobs:
           body: |
             START + Y1 (back to the SwanShellDX menu) patches for WonderSwan ROMs.
 
-            - **SwanShellPatcher.exe**: Windows, nothing to install (emulated test included). Double-click for the window, or run it from a command prompt: `SwanShellPatcher.exe ROM_OR_FOLDER -o PATCHES`.
-            - Any system: `python swanshell_patcher.py` from the source (optional: `pip install unicorn capstone`).
+            - **SwanShellPatcher.exe**: Windows, nothing to install. Double-click for the window, or run it from a command prompt: `SwanShellPatcher.exe ROM_OR_FOLDER -o PATCHES`.
+            - Any system: `python swanshell_patcher.py` from the source (Python 3, no other package needed).
 
             Copy the `.Y1P` files to `/NILESWAN/PATCHES/` on the SD card. See the README for the methods and options.
           files: dist/SwanShellPatcher.exe
