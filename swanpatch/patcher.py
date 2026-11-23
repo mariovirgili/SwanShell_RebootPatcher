@@ -69,9 +69,13 @@ def patch_rom(data, name, opt):
         res.lines.append('not a WonderSwan ROM (no header at the end of the file)')
         return res
     fallback = None
+    reads = methods.read_clusters(methods.keypad_reads(data))   # read routines
+    best_cov = -1
     for mname in methods.ORDER:
         if opt.only and mname not in opt.only:
             continue
+        if res.patched is not None and not opt.everything and mname not in ('anyread',):
+            continue                            # only anyread can still cover more reads
         try:
             cands, why = _candidates(mname, data, opt)
         except Exception as e:                      # a method must never stop the others
@@ -99,11 +103,19 @@ def patch_rom(data, name, opt):
                 if fallback is None:
                     fallback = (c, recs, mname)
                 continue
-            if res.patched is None and verdict in ('OK', 'TRUSTED', 'UNVERIFIED'):
-                res.patched, res.records, res.method, res.verdict = c.data, recs, mname, verdict
-                if c.risk:
-                    res.lines.append('             note: %s - test it on the console' % c.risk)
-            if res.patched is not None and not opt.everything:
+            if verdict in ('OK', 'TRUSTED', 'UNVERIFIED'):
+                cov = methods.covered_reads(data, c.data, reads) if reads else 0
+                if res.patched is None or (mname != 'database' and cov > best_cov
+                                           and res.method != 'database'):
+                    if res.patched is not None:
+                        res.lines.append('             %s covers more keypad reads (%d of %d): '
+                                         'used instead of %s' % (mname, cov, len(reads), res.method))
+                    res.patched, res.records, res.method, res.verdict = c.data, recs, mname, verdict
+                    best_cov = cov
+                    if c.risk:
+                        res.lines.append('             note: %s - test it on the console' % c.risk)
+            if res.patched is not None and not opt.everything and (
+                    res.method == 'database' or best_cov >= len(reads)):
                 return res
     if res.patched is None and fallback is not None:
         c, recs, mname = fallback

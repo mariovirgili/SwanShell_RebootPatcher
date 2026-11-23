@@ -120,8 +120,10 @@ def ilen(b, i):
         return 3
     if op in _REGREG and b[i + 1] >= 0xC0:
         return 2
-    if op in (0xC0, 0xC1) and b[i + 1] >= 0xC0:
+    if op in (0xC0, 0xC1, 0x80, 0x83) and b[i + 1] >= 0xC0:   # shift / ALU reg, imm8
         return 3
+    if op == 0x81 and b[i + 1] >= 0xC0:          # ALU reg, imm16
+        return 4
     if op == 0xE2 and b[i + 1] == 0xFE:          # loop $
         return 2
     if op == 0xE6 and b[i + 1] == 0xB5:          # out 0B5h, al
@@ -721,6 +723,44 @@ def vblank(data, caves=False):
     if not notes:
         return [], 'no VBlank handler found'
     return [Candidate('vblank', bytes(work), 'VBlank handler at ' + ', '.join(notes), tests)], ''
+
+
+def keypad_reads(data):
+    """File offsets of the keypad reads (in al,0B5h / in al,dx with DX=0B5h)
+    in the fixed banks."""
+    geo = Geometry(data)
+    out = []
+    for b in geo.linear_banks():
+        base = b << 16
+        bank = bytes(data[base:base + 0x10000])
+        for m in re.finditer(rb'\xE4\xB5|\xEC', bank):
+            p = m.start()
+            if p >= 0xFF00 or p == 0:
+                continue
+            if bank[p - 1] in (0xE8, 0xE9, 0x9A, 0xEA) or (p > 1 and bank[p - 2] in (0xE8, 0xE9)):
+                continue                                # inside a call/jump operand
+            if _is_read(bank, p):
+                out.append(base + p)
+    return out
+
+
+def read_clusters(reads, gap=0x80):
+    """Reads closer than `gap` bytes form one routine (e.g. the three group
+    reads of a keypad routine): patching one of them is enough."""
+    out = []
+    for r in sorted(reads):
+        if out and r - out[-1][-1] < gap and (r >> 16) == (out[-1][-1] >> 16):
+            out[-1].append(r)
+        else:
+            out.append([r])
+    return out
+
+
+def covered_reads(orig, new, clusters):
+    """How many read routines (clusters) the patch changed: a read itself
+    or the 8 bytes before it."""
+    return sum(1 for c in clusters
+               if any(orig[max(0, r - 8):r + 2] != new[max(0, r - 8):r + 2] for r in c))
 
 
 ORDER = ('database', 'classic', 'classic+', 'trampoline', 'port', 'cfunc', 'inportb', 'nopsled',

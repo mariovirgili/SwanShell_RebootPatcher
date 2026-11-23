@@ -75,8 +75,15 @@ jump to the IPL, which starts the menu.
 
 Free space: by default only bytes left over by the build tools (`FFh` runs
 at the end of a bank, `00h` padding at the end of a bank). `--caves` also
-uses long `00h` runs inside a bank: they are often empty graphics tiles, so a
-patch made that way is marked *test it on the console*.
+uses `00h` runs of 128 bytes or more inside a bank: they are often empty
+graphics tiles, so a patch made that way is marked *test it on the console*
+(in PATCHES.TXT the form ends with `-cave`).
+
+Many games read the keys in more than one routine (a menu one and a
+gameplay one). The tool lists the keypad reads in the fixed banks, groups the
+reads of one routine together, and when the first working method leaves some
+routines untouched it also tries `anyread`, keeping whichever patch covers
+more of them.
 
 ## The emulated test
 

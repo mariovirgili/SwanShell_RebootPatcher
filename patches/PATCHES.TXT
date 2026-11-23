@@ -386,3 +386,10 @@ D93AB792;524288;000000E3AB0004;port;6;Wondersnake 2 (2003)(Kojote - Slanina, Tom
 66B617D5;4194304;012C005B970040;classic;3;X - Card of Fate (2002-06-27)(Bandai)[SWJ-BANC2C].bin
 3FDAF554;2097152;011F00D25A0020;database;2;XI -sai- Little (2001-12-20)(Bandai)[h][SWJ-BANC1F].bin
 A1768249;131072;000000B1500002;port;3;wondercell v0.1 (2023-06-20)(Kennedy, Joe).bin
+03A2288C;2097152;160100CB940020;copy;7;Flash Koibito-kun (2000-12-28)(Kobunsha)[f EEPROM][SWJ-KBSC01].bin
+392DD813;2097152;180300D6EC0020;manual-bank0;7;Bakusou Dekatora Densetsu (J) [M][!].ws
+9BEE9428;4194304;0123009C420040;anyread-cave;27;Final Lap Special - GT & Formula Machine [T-En v0.9.1].wsc
+B07E6A56;4194304;0123009C420040;anyread-cave;38;Final Lap Special - GT & Formula Machine (2001-11-15)(Bandai)[SWJ-BANC23].bin
+A9F5BF54;8388608;012500EBA00080;inportb-cave;6;Kidou Senshi Gundam Vol. 3 - A Baoa Qu (2002-05-08)(Bandai)[SWJ-BANC25].bin
+08C0247B;4194304;01070056A50040;inportb-cave;6;Kidou Senshi Gundam Vol. 1 - Side 7 (2001-02-01)(Bandai)[SWJ-BANC07].bin
+C940C482;4194304;01230086630040;anyread-cave;38;Final Lap Special - GT & Formula Machine (2001-11-15)(Bandai)[f SRAM Sekret][SWJ-BANC23].bin

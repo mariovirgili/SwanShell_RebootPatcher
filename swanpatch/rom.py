@@ -181,7 +181,7 @@ class Space:
         if m:
             out.append((m.start(), m.end(), '00 tail'))
         if self.caves:
-            for m in re.finditer(rb'\x00{256,}', bank[:top]):
+            for m in re.finditer(rb'\x00{128,}', bank[:top]):
                 if m.end() < top:
                     out.append((m.start(), m.end(), '00 cave'))
         return out
