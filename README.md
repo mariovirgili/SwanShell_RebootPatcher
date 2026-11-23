@@ -103,6 +103,11 @@ original bytes all match.
 
 ## Credits
 
+[nileswan](https://github.com/asiekierka/nileswan) (the cartridge) and
+[swanshell](https://github.com/asiekierka/swanshell) (the menu SwanShellDX is
+based on): asie ([asiekierka](https://github.com/asiekierka)). The hook's
+reset into the menu relies on nileswan's hardware and IPL.
+
 SwanShellDX and this tool: Mario Virgili with Claude (Anthropic).
 Part of the bundled patches were first made with ChatGPT's SwanY1P tool
 and checked here. Keypad and hardware documentation: [WSdev wiki](https://ws.nesdev.org/).
