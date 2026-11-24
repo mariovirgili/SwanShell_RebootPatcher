@@ -157,18 +157,49 @@ def gui():
                                   tk.BooleanVar(value=True), tk.BooleanVar(value=False))
     top = tk.Frame(root)
     top.pack(fill='x', padx=8, pady=6)
-    lbl = tk.Label(top, text='No ROM selected', anchor='w')
+    lbl = tk.Label(top, text='No ROM in the list', anchor='w')
+    # the list of the ROMs to patch: Patch works on what is in it; select
+    # rows and press Remove (or Delete) to leave them out
+    lst = tk.Frame(root)
+    lst.pack(fill='both', padx=8)
+    box = tk.Listbox(lst, selectmode='extended', height=10, activestyle='none')
+    sb = tk.Scrollbar(lst, orient='vertical', command=box.yview)
+    box.config(yscrollcommand=sb.set)
+    box.pack(side='left', fill='both', expand=True)
+    sb.pack(side='left', fill='y')
+
+    def refresh():
+        box.delete(0, 'end')
+        for r in roms:
+            box.insert('end', os.path.basename(r) + '    (' + os.path.dirname(r) + ')')
+        lbl.config(text='%d ROM(s) in the list' % len(roms) if roms else 'No ROM in the list')
+
+    def add(paths):
+        have = {os.path.normcase(os.path.abspath(r)) for r in roms}
+        for r in paths:
+            k = os.path.normcase(os.path.abspath(r))
+            if k not in have:                   # the same file only once
+                have.add(k)
+                roms.append(r)
+        refresh()
 
     def add_files():
-        roms.extend(filedialog.askopenfilenames(
+        add(filedialog.askopenfilenames(
             filetypes=[('WonderSwan ROM', '*.ws *.wsc *.pc2 *.bin'), ('All files', '*.*')]))
-        lbl.config(text='%d ROM(s)' % len(roms))
 
     def add_dir():
         d = filedialog.askdirectory()
         if d:
-            roms.extend(list_roms([d]))
-            lbl.config(text='%d ROM(s)' % len(roms))
+            add(list_roms([d]))
+
+    def remove(_event=None):
+        for i in sorted(box.curselection(), reverse=True):
+            del roms[i]
+        refresh()
+
+    def clear():
+        del roms[:]
+        refresh()
 
     def pick_out():
         d = filedialog.askdirectory()
@@ -176,6 +207,10 @@ def gui():
             outv.set(d)
     tk.Button(top, text='Add ROMs...', command=add_files).pack(side='left')
     tk.Button(top, text='Add folder...', command=add_dir).pack(side='left', padx=4)
+    tk.Button(top, text='Remove selected', command=remove).pack(side='left', padx=(12, 4))
+    tk.Button(top, text='Clear list', command=clear).pack(side='left')
+    box.bind('<Delete>', remove)
+    box.bind('<BackSpace>', remove)
     lbl.pack(side='left', padx=8)
     row = tk.Frame(root)
     row.pack(fill='x', padx=8)
@@ -188,7 +223,7 @@ def gui():
                       ('use known patches', usedb), ('code caves (00h)', caves),
                       ('emulated test', verify), ('try all methods', allm)):
         tk.Checkbutton(opts, text=text, variable=var).pack(side='left')
-    log = scrolledtext.ScrolledText(root, width=110, height=30, font=('Courier', 9))
+    log = scrolledtext.ScrolledText(root, width=110, height=22, font=('Courier', 9))
     log.pack(fill='both', expand=True, padx=8, pady=6)
 
     def say(s):
@@ -196,7 +231,7 @@ def gui():
 
     def go():
         if not roms:
-            say('Add some ROMs first.')
+            say('The list is empty: add some ROMs first.')
             return
         opt = Options(db_dirs=[bundled_db()], use_db=usedb.get(), caves=caves.get(),
                       verify=verify.get(), everything=allm.get())
