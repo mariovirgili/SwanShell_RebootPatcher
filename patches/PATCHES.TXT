@@ -393,3 +393,4 @@ B07E6A56;4194304;0123009C420040;anyread-cave;38;Final Lap Special - GT & Formula
 A9F5BF54;8388608;012500EBA00080;inportb-cave;6;Kidou Senshi Gundam Vol. 3 - A Baoa Qu (2002-05-08)(Bandai)[SWJ-BANC25].bin
 08C0247B;4194304;01070056A50040;inportb-cave;6;Kidou Senshi Gundam Vol. 1 - Side 7 (2001-02-01)(Bandai)[SWJ-BANC07].bin
 C940C482;4194304;01230086630040;anyread-cave;38;Final Lap Special - GT & Formula Machine (2001-11-15)(Bandai)[f SRAM Sekret][SWJ-BANC23].bin
+39A1391A;8388608;0117000FD80080;manual-cfunc;2;Kidou Senshi Gundam Vol. 2 - Jaburo (Japan).wsc
